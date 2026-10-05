@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2026-07-22 16:42:36.871946",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "arrival_source",
+  "column_break_j6dp",
+  "arrival_source_ar",
+  "icon",
+  "display_settings_section",
+  "display_order",
+  "color",
+  "active",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0643\u0648\u062f",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "arrival_source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0645\u0635\u062f\u0631 \u0627\u0644\u0648\u0635\u0648\u0644",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_j6dp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "arrival_source_ar",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0628\u0627\u0644\u0639\u0631\u0628\u064a\u0629"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0623\u064a\u0642\u0648\u0646\u0629"
+  },
+  {
+   "fieldname": "display_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Display Settings"
+  },
+  {
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "label": "\u0627\u0644\u0646\u0648\u0639"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "\u0627\u0644\u0644\u0648\u0646"
+  },
+  {
+   "default": "\u2714",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-22 17:09:17.146888",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Arrival Source",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

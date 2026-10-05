@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-09-04 15:44:51.816504",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "encounter",
+  "patient",
+  "discharge_type",
+  "discharge_time",
+  "discharged_by",
+  "department",
+  "bed",
+  "instructions",
+  "follow_up"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ER-DIS-.YYYY.-"
+  },
+  {
+   "fieldname": "encounter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Encounter",
+   "options": "Patient Encounter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "discharge_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Discharge Type",
+   "options": "Home\nAdmission\nTransfer\nLeft Against Advice\nDied",
+   "reqd": 1
+  },
+  {
+   "fieldname": "discharge_time",
+   "fieldtype": "Datetime",
+   "label": "Discharge Time"
+  },
+  {
+   "fieldname": "discharged_by",
+   "fieldtype": "Link",
+   "label": "Discharged By",
+   "options": "User"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "bed",
+   "fieldtype": "Link",
+   "label": "Bed",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "instructions",
+   "fieldtype": "Text",
+   "label": "Instructions"
+  },
+  {
+   "fieldname": "follow_up",
+   "fieldtype": "Data",
+   "label": "Follow Up"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-04 15:44:51.816504",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Discharge Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient"
+}

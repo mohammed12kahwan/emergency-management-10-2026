@@ -1,0 +1,9 @@
+{
+  "name": "custom_app",
+  "version": "0.0.1",
+  "description": "Custom Emergency Management App",
+  "private": true,
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

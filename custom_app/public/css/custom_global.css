@@ -1,0 +1,1159 @@
+
+/* =========================================================
+   ERPNext 15 / Frappe 15
+   Global Blue Borders for All Form Fields
+   ========================================================= */
+/* ---------------------------------------------------------
+   Standard Form Fields
+   --------------------------------------------------------- */
+.form-control,
+.control-input,
+.frappe-control input,
+.frappe-control textarea,
+.frappe-control select,
+.frappe-control .awesomplete input,
+.frappe-control .link-field input,
+.frappe-control .date-field input,
+.frappe-control .time-field input,
+.frappe-control .datetime-field input,
+.frappe-control .autocomplete-input,
+.form-section input,
+.form-section textarea,
+.form-section select {
+    border: 1px solid #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Focus State
+   --------------------------------------------------------- */
+.form-control:focus,
+.control-input:focus,
+.frappe-control input:focus,
+.frappe-control textarea:focus,
+.frappe-control select:focus,
+.frappe-control .awesomplete input:focus,
+.frappe-control .autocomplete-input:focus {
+    border-color: #1976d2 !important;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.15) !important;
+}
+/* ---------------------------------------------------------
+   Link Fields
+   --------------------------------------------------------- */
+.frappe-control .link-field input,
+.frappe-control .link-btn {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Select Fields
+   --------------------------------------------------------- */
+.frappe-control .select2-container .select2-choice,
+.frappe-control .select2-container .select2-selection,
+.frappe-control .select2-container .select2-selection--single,
+.frappe-control .select2-container .select2-selection--multiple {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Date / Time / Datetime Fields
+   --------------------------------------------------------- */
+.frappe-control .date-field input,
+.frappe-control .time-field input,
+.frappe-control .datetime-field input {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Child Tables / DataGrid Fields
+   --------------------------------------------------------- */
+.grid-row input,
+.grid-row textarea,
+.grid-row select,
+.grid-row .form-control,
+.grid-row .control-input,
+.grid-row .frappe-control input,
+.grid-row .frappe-control textarea,
+.grid-row .frappe-control select {
+    border: 1px solid #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Child Table Focus
+   --------------------------------------------------------- */
+.grid-row input:focus,
+.grid-row textarea:focus,
+.grid-row select:focus,
+.grid-row .form-control:focus,
+.grid-row .control-input:focus {
+    border-color: #1976d2 !important;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.15) !important;
+}
+/* ---------------------------------------------------------
+   Read-only Fields
+   --------------------------------------------------------- */
+.form-control[readonly],
+.form-control:disabled,
+input[readonly],
+input:disabled,
+textarea[readonly],
+textarea:disabled,
+select:disabled {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Frappe Control Wrappers
+   --------------------------------------------------------- */
+.frappe-control .control-input,
+.frappe-control .form-control {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Small / Compact Inputs
+--------------------------------------------------------- */
+.input-with-feedback,
+.input-xs,
+.input-sm {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Bootstrap-style Inputs used by ERPNext
+   --------------------------------------------------------- */
+input.form-control,
+textarea.form-control,
+select.form-control {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Search / Filter Inputs
+   --------------------------------------------------------- */
+.list-filter input,
+.list-filter select,
+.list-filter .form-control,
+.page-form input,
+.page-form select,
+.page-form textarea {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Modal Fields
+   --------------------------------------------------------- */
+.modal input,
+.modal textarea,
+.modal select,
+.modal .form-control,
+.modal .control-input {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Dialog Fields
+   --------------------------------------------------------- */
+.frappe-dialog input,
+.frappe-dialog textarea,
+.frappe-dialog select,
+.frappe-dialog .form-control,
+.frappe-dialog .control-input {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Quick Entry Fields
+   --------------------------------------------------------- */
+.modal-dialog input,
+.modal-dialog textarea,
+.modal-dialog select,
+.modal-dialog .form-control,
+.modal-dialog .control-input {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Form Section Inputs
+   --------------------------------------------------------- */
+.form-section input,
+.form-section textarea,
+.form-section select,
+.form-section .form-control,
+.form-section .control-input {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Table / Grid Editor Inputs
+   --------------------------------------------------------- */
+.grid-form input,
+.grid-form textarea,
+.grid-form select,
+.grid-form .form-control,
+.grid-form .control-input {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Read-only / Disabled Visual Consistency
+   --------------------------------------------------------- */
+input[disabled],
+textarea[disabled],
+select[disabled],
+.form-control[disabled],
+.control-input[disabled],
+input[readonly],
+textarea[readonly],
+select[readonly],
+.form-control[readonly],
+.control-input[readonly] {
+    border-color: #2196f3 !important;
+}
+/* ---------------------------------------------------------
+   Focus for Readable Accessibility
+   --------------------------------------------------------- */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+.form-control:focus-visible,
+.control-input:focus-visible {
+    border-color: #1976d2 !important;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.15) !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   COMPACT 3D MAIN BUTTONS
+   ============================================================ */
+
+.er-four-window-root .er-patient-action-bar .er-header-action {
+    height: 30px !important;
+    min-height: 30px !important;
+    padding: 3px 10px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    border-radius: 7px !important;
+
+    border: 1px solid #9fb4c6 !important;
+
+    box-shadow:
+        0 3px 0 #7d96a9,
+        0 5px 9px rgba(32, 57, 78, 0.18),
+        inset 0 1px 0 rgba(255,255,255,.85) !important;
+
+    transform: translateY(0) !important;
+    transition:
+        transform .10s ease,
+        box-shadow .10s ease,
+        filter .10s ease !important;
+}
+
+.er-four-window-root .er-patient-action-bar .er-header-action:hover {
+    transform: translateY(-1px) !important;
+    filter: brightness(1.03) !important;
+
+    box-shadow:
+        0 4px 0 #718b9f,
+        0 7px 12px rgba(32, 57, 78, 0.22),
+        inset 0 1px 0 rgba(255,255,255,.92) !important;
+}
+
+.er-four-window-root .er-patient-action-bar .er-header-action:active {
+    transform: translateY(2px) !important;
+
+    box-shadow:
+        0 1px 0 #718b9f,
+        0 2px 4px rgba(32, 57, 78, 0.16),
+        inset 0 2px 4px rgba(0,0,0,.08) !important;
+}
+
+/* Button surfaces — Windows blue family */
+.er-four-window-root [data-header-action="new_visit"] {
+    background: linear-gradient(#f4faff, #d8ebfb) !important;
+    color: #145a87 !important;
+}
+
+.er-four-window-root [data-header-action="doctor_visit"] {
+    background: linear-gradient(#edf7ff, #cfe5f7) !important;
+    color: #17577e !important;
+}
+
+.er-four-window-root [data-header-action="visit_console"] {
+    background: linear-gradient(#f0f9ff, #d5ebf7) !important;
+    color: #20627e !important;
+}
+
+.er-four-window-root [data-header-action="current_console"] {
+    background: linear-gradient(#eaf5ff, #cfe4f8) !important;
+    color: #245b82 !important;
+}
+
+.er-four-window-root [data-header-action="bed_dashboard"] {
+    background: linear-gradient(#eef8ff, #d5eaf8) !important;
+    color: #23617f !important;
+}
+
+.er-four-window-root [data-header-action="queue_list"] {
+    background: linear-gradient(#e8f4ff, #cfe3f5) !important;
+    color: #1f5d85 !important;
+}
+
+.er-four-window-root [data-header-action="medical_record"] {
+    background: linear-gradient(#f1f7fc, #d8e6f1) !important;
+    color: #365b73 !important;
+}
+
+/* ============================================================
+   COMPACT 3D SERVICE BUTTONS
+   ============================================================ */
+
+.er-four-window-root .er-console-service-bar .er-console-work-action {
+    height: 30px !important;
+    min-height: 30px !important;
+    padding: 3px 11px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    border-radius: 7px !important;
+    border: 1px solid #9fb7ca !important;
+
+    box-shadow:
+        0 3px 0 #7f99ad,
+        0 5px 8px rgba(32, 57, 78, .16),
+        inset 0 1px 0 rgba(255,255,255,.88) !important;
+
+    transform: translateY(0) !important;
+    transition:
+        transform .10s ease,
+        box-shadow .10s ease !important;
+}
+
+.er-four-window-root .er-console-service-bar .er-console-work-action:hover {
+    transform: translateY(-1px) !important;
+}
+
+.er-four-window-root .er-console-service-bar .er-console-work-action:active {
+    transform: translateY(2px) !important;
+
+    box-shadow:
+        0 1px 0 #7f99ad,
+        0 2px 4px rgba(32, 57, 78, .13),
+        inset 0 2px 4px rgba(0,0,0,.07) !important;
+}
+
+/* ============================================================
+   ER PATIENT INTAKE — SINGLE FINAL VISUAL DESIGN
+   ============================================================ */
+
+/* ============================================================
+   1. PATIENT SUMMARY OUTER RECTANGLE
+   ============================================================ */
+
+.er-four-window-root .er-patient-summary-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    padding: 0 !important;
+    margin: 8px 0 12px !important;
+
+    background: #F7FBFF !important;
+    border: 1px solid #B8D5EC !important;
+    border-radius: 6px !important;
+
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+    background-image: none !important;
+}
+
+/* ============================================================
+   2. PATIENT SUMMARY TITLE
+   ============================================================ */
+
+.er-four-window-root .er-patient-summary-title {
+    height: 36px !important;
+    min-height: 36px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 12px !important;
+    margin: 0 !important;
+
+    background: #0078D4 !important;
+    color: #FFFFFF !important;
+
+    border: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
+
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+/* ============================================================
+   3. TEN PATIENT BOXES = 5 COLUMNS × 2 ROWS
+   ============================================================ */
+
+.er-four-window-root .er-patient-summary-grid {
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+
+    gap: 6px !important;
+    padding: 8px !important;
+    margin: 0 !important;
+
+    background: #F7FBFF !important;
+    border: 0 !important;
+
+    box-shadow: none !important;
+}
+
+/* ============================================================
+   4. FLAT PATIENT INFORMATION BOXES
+   ============================================================ */
+
+.er-four-window-root .er-patient-summary-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: 54px !important;
+    min-height: 54px !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+    padding: 6px 9px !important;
+
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+/* ============================================================
+   5. TEN DIFFERENT BLUE SHADES
+   ============================================================ */
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(1) {
+    background: #EEF6FD !important;
+    border: 1px solid #C7DFF2 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(2) {
+    background: #E7F3FC !important;
+    border: 1px solid #BCD9EE !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(3) {
+    background: #DFF0FA !important;
+    border: 1px solid #B0D1E8 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(4) {
+    background: #F2F8FE !important;
+    border: 1px solid #D0E5F4 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(5) {
+    background: #D8ECF8 !important;
+    border: 1px solid #A9CDE4 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(6) {
+    background: #EAF4FB !important;
+    border: 1px solid #C1DAEB !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(7) {
+    background: #D0E7F5 !important;
+    border: 1px solid #9FC5DE !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(8) {
+    background: #E2EFF8 !important;
+    border: 1px solid #B4D1E4 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(9) {
+    background: #C9E2F2 !important;
+    border: 1px solid #94BCD8 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid > div:nth-child(10) {
+    background: #DCECF7 !important;
+    border: 1px solid #AFCFE3 !important;
+}
+
+/* Patient summary text */
+
+.er-four-window-root .er-patient-summary-grid span {
+    display: block !important;
+    margin: 0 0 3px !important;
+
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+
+    color: #4A6880 !important;
+}
+
+.er-four-window-root .er-patient-summary-grid strong {
+    display: block !important;
+    min-width: 0 !important;
+
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+
+    color: #16496E !important;
+
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Absolutely no 3D decorations */
+
+.er-four-window-root .er-patient-summary-card::before,
+.er-four-window-root .er-patient-summary-card::after,
+.er-four-window-root .er-patient-summary-grid::before,
+.er-four-window-root .er-patient-summary-grid::after,
+.er-four-window-root .er-patient-summary-grid > div::before,
+.er-four-window-root .er-patient-summary-grid > div::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* ============================================================
+   6. VISIT WINDOW — FIELD CARDS
+   ============================================================ */
+
+.er-four-window-root .er-window-visit .er-window-body {
+    background: #F8FBFE !important;
+    border-radius: 6px !important;
+}
+
+.er-four-window-root .er-window-visit .er-native-section-host {
+    background: #F8FBFE !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+}
+
+/* Actual native Frappe field containers */
+
+.er-four-window-root .er-window-visit
+.er-native-section-host .frappe-control {
+    box-sizing: border-box !important;
+
+    padding: 7px 9px !important;
+    margin-bottom: 7px !important;
+
+    background: #EEF6FD !important;
+    border: 1px solid #C9DFEF !important;
+    border-radius: 5px !important;
+
+    box-shadow: none !important;
+}
+
+/* ============================================================
+   7. TRIAGE WINDOW — FIELD CARDS
+   ============================================================ */
+
+.er-four-window-root .er-window-triage .er-window-body {
+    background: #F5FAFE !important;
+    border-radius: 6px !important;
+}
+
+.er-four-window-root .er-window-triage .er-native-section-host {
+    background: #F5FAFE !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+}
+
+.er-four-window-root .er-window-triage
+.er-native-section-host .frappe-control {
+    box-sizing: border-box !important;
+
+    padding: 7px 9px !important;
+    margin-bottom: 7px !important;
+
+    background: #E8F3FB !important;
+    border: 1px solid #BFD9EC !important;
+    border-radius: 5px !important;
+
+    box-shadow: none !important;
+}
+
+/* Field labels */
+
+.er-four-window-root .er-window-visit .control-label,
+.er-four-window-root .er-window-triage .control-label {
+    color: #315A78 !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+/* Actual inputs stay white */
+
+.er-four-window-root .er-window-visit .form-control,
+.er-four-window-root .er-window-visit input,
+.er-four-window-root .er-window-visit textarea,
+.er-four-window-root .er-window-visit select,
+.er-four-window-root .er-window-triage .form-control,
+.er-four-window-root .er-window-triage input,
+.er-four-window-root .er-window-triage textarea,
+.er-four-window-root .er-window-triage select {
+    background: #FFFFFF !important;
+    border-color: #B8D5E9 !important;
+    box-shadow: none !important;
+}
+
+/* Focus */
+
+.er-four-window-root .er-window-visit .form-control:focus,
+.er-four-window-root .er-window-visit input:focus,
+.er-four-window-root .er-window-visit textarea:focus,
+.er-four-window-root .er-window-visit select:focus,
+.er-four-window-root .er-window-triage .form-control:focus,
+.er-four-window-root .er-window-triage input:focus,
+.er-four-window-root .er-window-triage textarea:focus,
+.er-four-window-root .er-window-triage select:focus {
+    border-color: #0078D4 !important;
+    box-shadow: 0 0 0 1px rgba(0,120,212,.12) !important;
+}
+
+/* ============================================================
+   8. SERVICE BUTTONS
+   ============================================================ */
+
+.er-four-window-root
+.er-console-work-action[data-console-section="labs"] {
+    background: #107C10 !important;
+    border-color: #107C10 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-console-work-action[data-console-section="radiology"] {
+    background: #0078D4 !important;
+    border-color: #0078D4 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-console-work-action[data-console-section="medications"] {
+    background: #D83B01 !important;
+    border-color: #D83B01 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-console-work-action[data-console-section="procedures"] {
+    background: #8764B8 !important;
+    border-color: #8764B8 !important;
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   9. PATIENT ACTION BUTTONS
+   ============================================================ */
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="new_visit"] {
+    background: #5C2D91 !important;
+    border-color: #5C2D91 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="doctor_visit"] {
+    background: #2B579A !important;
+    border-color: #2B579A !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="visit_console"] {
+    background: #0078D4 !important;
+    border-color: #0078D4 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="current_console"] {
+    background: #0063B1 !important;
+    border-color: #0063B1 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="bed_dashboard"] {
+    background: #498205 !important;
+    border-color: #498205 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="queue_list"] {
+    background: #008C95 !important;
+    border-color: #008C95 !important;
+    color: #FFFFFF !important;
+}
+
+.er-four-window-root
+.er-patient-action-bar button[data-header-action="medical_record"] {
+    background: #D83B01 !important;
+    border-color: #D83B01 !important;
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   10. ALL ER INTAKE BUTTONS — FLAT / CLEAN
+   ============================================================ */
+
+.er-four-window-root .er-console-work-action,
+.er-four-window-root .er-patient-action-bar button,
+.er-four-window-root .er-vitals-toolbar button {
+    min-height: 34px !important;
+    height: 34px !important;
+
+    border-radius: 4px !important;
+
+    background-image: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    text-shadow: none !important;
+}
+
+/* ============================================================
+   11. RESPONSIVE SIZE
+   ============================================================ */
+
+@media (max-width: 1100px) {
+    .er-four-window-root .er-patient-summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .er-four-window-root .er-patient-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .er-four-window-root .er-patient-summary-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ============================================================
+   END SINGLE FINAL VISUAL DESIGN
+   ============================================================ */
+
+/* ============================================================
+   ER PATIENT INTAKE — FINAL SECTION CARD DESIGN
+   CSS ONLY — ONE DESIGN
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   MAIN ER WINDOWS
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root .er-window {
+    border: 1px solid #B8D5EC !important;
+    border-radius: 6px !important;
+    background: #F7FBFF !important;
+    box-shadow: none !important;
+}
+
+html body .er-four-window-root .er-window-header {
+    min-height: 36px !important;
+    padding: 8px 12px !important;
+    background: #0078D4 !important;
+    color: #FFFFFF !important;
+    border-radius: 5px 5px 0 0 !important;
+}
+
+/* ------------------------------------------------------------
+   SECTION CARDS CONTAINING THE FIELDS
+   Each section gets its own color.
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root
+.er-native-section-host
+.form-section {
+    box-sizing: border-box !important;
+    width: 100% !important;
+
+    margin: 0 0 8px 0 !important;
+    padding: 8px !important;
+
+    border-radius: 6px !important;
+    border: 1px solid #BCD7EA !important;
+
+    box-shadow: none !important;
+}
+
+/* بيانات الزيارة */
+html body .er-four-window-root
+.er-native-section-host
+.form-section[data-fieldname="visit_information"] {
+    background: #EAF4FD !important;
+    border-color: #B8D7EC !important;
+}
+
+/* بيانات الوصول */
+html body .er-four-window-root
+.er-native-section-host
+.form-section[data-fieldname="section_break_ggza"] {
+    background: #E5F1FB !important;
+    border-color: #B1D1E7 !important;
+}
+
+/* التقييم السريري */
+html body .er-four-window-root
+.er-native-section-host
+.form-section[data-fieldname="section_break_vitals"] {
+    background: #DCEEF9 !important;
+    border-color: #A7C9DF !important;
+}
+
+/* التصرف النهائي */
+html body .er-four-window-root
+.er-native-section-host
+.form-section[data-fieldname="section_break_final_result"] {
+    background: #E8F3FA !important;
+    border-color: #B6D2E4 !important;
+}
+
+/* الطبيب / معلومات الحالة إن ظهرت داخل نافذة الطبيب */
+html body .er-four-window-root
+.er-native-section-host
+.form-section[data-fieldname="section_break_njnf"] {
+    background: #F0F7FC !important;
+    border-color: #C7DCEB !important;
+}
+
+html body .er-four-window-root
+.er-native-section-host
+.form-section[data-fieldname="section_break_case_info"] {
+    background: #E2EFF8 !important;
+    border-color: #AEC9DD !important;
+}
+
+/* ------------------------------------------------------------
+   FALLBACK:
+   If data-fieldname is not exposed by Frappe, color sections
+   by their order inside the native host.
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root
+.er-window-visit
+.er-native-section-host
+.form-section:nth-child(1) {
+    background: #EAF4FD !important;
+    border-color: #B8D7EC !important;
+}
+
+html body .er-four-window-root
+.er-window-visit
+.er-native-section-host
+.form-section:nth-child(2) {
+    background: #E5F1FB !important;
+    border-color: #B1D1E7 !important;
+}
+
+html body .er-four-window-root
+.er-window-triage
+.er-native-section-host
+.form-section:nth-child(1) {
+    background: #DCEEF9 !important;
+    border-color: #A7C9DF !important;
+}
+
+html body .er-four-window-root
+.er-window-triage
+.er-native-section-host
+.form-section:nth-child(2) {
+    background: #E8F3FA !important;
+    border-color: #B6D2E4 !important;
+}
+
+html body .er-four-window-root
+.er-window-triage
+.er-native-section-host
+.form-section:nth-child(3) {
+    background: #E2EFF8 !important;
+    border-color: #AEC9DD !important;
+}
+
+/* ------------------------------------------------------------
+   FIELD SIZE — COMPACT
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root
+.er-native-section-host
+.frappe-control {
+    min-height: 0 !important;
+    padding: 4px 6px !important;
+    margin-bottom: 4px !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Compact labels */
+html body .er-four-window-root
+.er-native-section-host
+.control-label {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2px !important;
+    color: #355A78 !important;
+}
+
+/* Compact inputs */
+html body .er-four-window-root
+.er-native-section-host
+.form-control,
+html body .er-four-window-root
+.er-native-section-host
+input,
+html body .er-four-window-root
+.er-native-section-host
+select,
+html body .er-four-window-root
+.er-native-section-host
+textarea {
+    min-height: 30px !important;
+    height: 30px !important;
+
+    padding: 4px 7px !important;
+
+    font-size: 11px !important;
+
+    background: #FFFFFF !important;
+    border: 1px solid #BBD5E8 !important;
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+}
+
+/* Textareas */
+html body .er-four-window-root
+.er-native-section-host
+textarea {
+    min-height: 50px !important;
+    height: auto !important;
+}
+
+/* Read-only fields */
+html body .er-four-window-root
+.er-native-section-host
+.control-input {
+    min-height: 30px !important;
+}
+
+/* ------------------------------------------------------------
+   VITAL SIGNS SECTION
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root .er-vitals-section {
+    margin-top: 8px !important;
+    padding: 8px !important;
+
+    background: #D8ECF8 !important;
+    border: 1px solid #A7C9DF !important;
+    border-radius: 6px !important;
+
+    box-shadow: none !important;
+}
+
+html body .er-four-window-root .er-triage-section-title {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #15557D !important;
+    margin-bottom: 6px !important;
+}
+
+/* ------------------------------------------------------------
+   VITAL SIGNS POPUP — COMPACT
+   ------------------------------------------------------------ */
+
+html body .er-vitals-dialog .modal-dialog {
+    width: 760px !important;
+    max-width: calc(100vw - 30px) !important;
+    margin: 20px auto !important;
+}
+
+html body .er-vitals-dialog .modal-content {
+    border: 1px solid #B8D5E9 !important;
+    border-radius: 7px !important;
+    box-shadow: none !important;
+}
+
+html body .er-vitals-dialog .modal-header {
+    min-height: 40px !important;
+    padding: 8px 12px !important;
+    background: #0078D4 !important;
+    color: #FFFFFF !important;
+    border-radius: 6px 6px 0 0 !important;
+}
+
+html body .er-vitals-dialog .modal-body {
+    padding: 10px !important;
+    max-height: 70vh !important;
+    overflow-y: auto !important;
+}
+
+html body .er-vitals-dialog .frappe-control {
+    padding: 4px 6px !important;
+    margin-bottom: 4px !important;
+}
+
+html body .er-vitals-dialog .control-label {
+    font-size: 10px !important;
+    margin-bottom: 2px !important;
+}
+
+html body .er-vitals-dialog .form-control,
+html body .er-vitals-dialog input,
+html body .er-vitals-dialog select,
+html body .er-vitals-dialog textarea {
+    min-height: 30px !important;
+    height: 30px !important;
+    padding: 4px 7px !important;
+    font-size: 11px !important;
+    border-radius: 4px !important;
+}
+
+html body .er-vitals-dialog textarea {
+    height: auto !important;
+    min-height: 52px !important;
+}
+
+html body .er-vitals-dialog .modal-footer {
+    padding: 7px 10px !important;
+}
+
+html body .er-vitals-dialog .modal-footer .btn {
+    min-height: 32px !important;
+    height: 32px !important;
+    padding: 5px 12px !important;
+    border-radius: 4px !important;
+}
+
+/* ------------------------------------------------------------
+   SERVICE BUTTON COLORS
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root
+.er-console-work-action[data-console-section="labs"] {
+    background: #107C10 !important;
+    border-color: #107C10 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-console-work-action[data-console-section="radiology"] {
+    background: #0078D4 !important;
+    border-color: #0078D4 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-console-work-action[data-console-section="medications"] {
+    background: #D83B01 !important;
+    border-color: #D83B01 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-console-work-action[data-console-section="procedures"] {
+    background: #8764B8 !important;
+    border-color: #8764B8 !important;
+    color: #FFFFFF !important;
+}
+
+/* ------------------------------------------------------------
+   PATIENT BUTTON COLORS
+   ------------------------------------------------------------ */
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="new_visit"] {
+    background: #5C2D91 !important;
+    border-color: #5C2D91 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="doctor_visit"] {
+    background: #2B579A !important;
+    border-color: #2B579A !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="visit_console"] {
+    background: #0078D4 !important;
+    border-color: #0078D4 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="current_console"] {
+    background: #0063B1 !important;
+    border-color: #0063B1 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="bed_dashboard"] {
+    background: #498205 !important;
+    border-color: #498205 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="queue_list"] {
+    background: #008C95 !important;
+    border-color: #008C95 !important;
+    color: #FFFFFF !important;
+}
+
+html body .er-four-window-root
+.er-patient-action-bar
+button[data-header-action="medical_record"] {
+    background: #D83B01 !important;
+    border-color: #D83B01 !important;
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   END FINAL SECTION CARD DESIGN
+   ============================================================ */

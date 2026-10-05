@@ -1,0 +1,59 @@
+node_modules
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temporary recovery / backup files
+*.before_recovery_*
+*.before_lab_recovery_*
+*.before_syntax_repair_*
+
+# Local environment / secrets
+.env
+*.env
+*.secret
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Backup files
+*.backup_before_*
+
+# Local AI / session notes
+AGENTS.md
+ANCHORED_SUMMARY.md
+
+# Local backup files - never commit
+**/*.backup
+**/*.backup_*
+**/*.bak
+**/FINAL_BACKUP*/
+**/*.before_*
+**/*.failed_*
+**/*.stage_*
+
+# Local backup files
+**/*.backup
+**/*.backup_*
+**/*.bak
+**/*.before_*
+**/*.failed_*
+**/*.stage_*
+**/FINAL_BACKUP*/
+
+# Backup artifacts
+**/*.backup*
+**/*.bak*
+**/*.before_*
+**/*.failed_stage*
+**/*.stage_attempt*
+**/FINAL_BACKUP*
+
+# Temporary split backups
+**/_doctor_split_backup_*
+
+# Any filename containing backup
+**/*backup*

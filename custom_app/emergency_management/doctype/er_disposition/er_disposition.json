@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2026-07-22 16:42:36.955490",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rjxk",
+  "basic_information_section",
+  "code",
+  "disposition_name",
+  "column_break_kjbu",
+  "arabic_name",
+  "is_active",
+  "description",
+  "close_visit",
+  "requires_destination"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rjxk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0643\u0648\u062f",
+   "unique": 1
+  },
+  {
+   "fieldname": "disposition_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0635\u064a\u0631"
+  },
+  {
+   "fieldname": "arabic_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0628\u0627\u0644\u0639\u0631\u0628\u064a\u0629"
+  },
+  {
+   "fieldname": "column_break_kjbu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "fieldname": "close_visit",
+   "fieldtype": "Check",
+   "label": "\u0625\u063a\u0644\u0627\u0642 \u0627\u0644\u0632\u064a\u0627\u0631\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_destination",
+   "fieldtype": "Check",
+   "label": "\u064a\u062a\u0637\u0644\u0628 \u062c\u0647\u0629 \u062a\u062d\u0648\u064a\u0644"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-22 17:09:16.999232",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Disposition",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

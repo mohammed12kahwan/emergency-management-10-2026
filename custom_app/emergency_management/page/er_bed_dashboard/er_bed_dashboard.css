@@ -1,0 +1,306 @@
+.er-bed-dashboard {
+    direction: rtl;
+    padding: 20px;
+}
+
+.bed-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bed-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* شبكة البطاقات */
+.beds-container {
+    /* grid removed: room sections are direct children */
+}
+
+/* قسم الغرفة / المنطقة */
+.room-section {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e8ec;
+    overflow: hidden;
+}
+
+.room-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f6f8fa;
+    cursor: pointer;
+    user-select: none;
+    border-bottom: 1px solid #e5e8ec;
+}
+
+.room-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.room-toggle-icon {
+    font-size: 16px;
+    color: #555;
+    transition: transform 0.2s ease;
+    width: 18px;
+    text-align: center;
+}
+
+.room-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.room-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.room-counts {
+    font-size: 13px;
+    color: #555;
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid #e5e8ec;
+}
+
+.room-beds {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+/* البطاقة */
+.bed-card {
+    border-radius: 12px;
+    padding: 14px;
+    background: #eef4f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-right: 5px solid #5a7ea8;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    font-size: 14px;
+    position: relative;
+}
+
+.bed-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.bed-card.OCCUPIED {
+    border-right-color: #d5e035;
+    background: #fbf8f4;
+}
+
+.bed-card.AVAILABLE {
+    border-right-color: #0917e4;
+    background: #eaf6ea;
+}
+
+/* مرئيات السرير الافتراضية (أفقية، مرضية) — لون الفرز عبر CSS variable */
+.bed-svg {
+    display: block;
+    width: 110px;
+    height: auto;
+    color: var(--triage-color, #5a7ea8);
+}
+
+.bed-headboard {
+    fill: currentColor;
+}
+
+.bed-mattress {
+    fill: #f0f4f8;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.bed-side-rail {
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    opacity: 0.8;
+}
+
+.bed-leg {
+    stroke: #6b8ca3;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.bed-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+/* مؤشر موعد العلامات الحيوية (يعتمد على Vital Signs.next_vital_due الموجود) */
+.next-vital-indicator {
+    font-size: 19px;
+    cursor: pointer;
+    color: #f0ad44;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.next-vital-indicator:hover {
+    color: #ec971f;
+}
+
+.next-vital-indicator.overdue {
+    color: #d9534f;
+}
+
+.next-vital-indicator.overdue:hover {
+    color: #c9302c;
+}
+
+/* مؤشر طلب تنويم معلق */
+.admission-pending-indicator {
+    font-size: 18px;
+    color: #d9534f;
+    cursor: pointer;
+    line-height: 1;
+    animation: pulseAdmission 1.2s infinite;
+}
+
+@keyframes pulseAdmission {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.bed-title {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bed-name {
+    font-size: 16px;
+}
+
+.bed-meta {
+    margin: 8px 0;
+}
+
+.patient-info {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+.triage-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.triage-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bed-sub {
+    font-size: 13px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.empty-bed {
+    color: #888;
+    font-style: italic;
+}
+
+/* شارة إشعار خاصة بمريض هذا السرير — تُظهرها الـ JS عند وجود عدد */
+.bed-card .bed-patient-notification-badge {
+    display: none;
+    background: #d9534f;
+    color: #fff;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.bed-card .bed-patient-notification-badge[data-count]:not([data-count="0"]),
+.bed-card:hover .bed-patient-notification-badge,
+.bed-card.show-actions .bed-patient-notification-badge {
+    display: inline-block;
+}
+
+/* طرق البحث — تظهر لبطاقة واحدة فقط عند التمرير أو اللمس */
+.bed-actions {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    animation: showActions 0.15s ease-in-out;
+}
+
+.bed-card:hover .bed-actions,
+.bed-card.show-actions .bed-actions {
+    display: block;
+}
+
+.bed-actions button {
+    width: 95%;
+    margin: 3px;
+    border-radius: 6px;
+    font-size: 13px;
+    padding: 6px 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: filter 0.15s ease, opacity 0.15s ease;
+}
+
+.bed-actions button:hover {
+    filter: brightness(1.1);
+}
+
+.bed-actions .new-vitals-btn {
+    background: #2d8f4e;
+}
+
+.bed-actions .prev-vitals-btn {
+    background: #3a6b9e;
+}
+
+.bed-actions .history-btn {
+    background: #5c7a99;
+}
+
+.bed-actions .open-visit-btn {
+    background: #1b4f72;
+}
+
+@keyframes showActions {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

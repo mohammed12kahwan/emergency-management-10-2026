@@ -1,0 +1,294 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2026-07-22 16:42:37.058910",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "patient_intake",
+  "patient",
+  "patient_name",
+  "column_break_ospe",
+  "queue_number",
+  "queue_status",
+  "active_queue",
+  "\u0645\u0639\u0644\u0648\u0645\u0627\u062a_\u0642\u0627\u0626\u0645\u0629_\u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631_section",
+  "triage_level",
+  "priority",
+  "waiting_area",
+  "check_yuaq",
+  "column_break_cvke",
+  "current_location",
+  "arrival_time",
+  "waiting_minutes",
+  "\u062a\u0639\u064a\u064a\u0646_\u0627\u0644\u0637\u0628\u064a\u0628_\u0648\u0627\u0644\u0645\u0645\u0631\u0636_section",
+  "attending_physician",
+  "called_time",
+  "response_minutes",
+  "column_break_bsdt",
+  "assigned_nurse",
+  "examination_start",
+  "section_break_vqdg",
+  "bed_assignment_column",
+  "bed",
+  "bed_assigned_time",
+  "column_break_dszm",
+  "bed_status",
+  "bed_released_time",
+  "patient_flow_timing_section",
+  "triage_start_time",
+  "triage_end_time",
+  "column_break_dygw",
+  "doctor_start_time",
+  "disposition_time",
+  "discharge_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "patient_intake",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0632\u064a\u0627\u0631\u0629 \u0627\u0644\u0637\u0648\u0627\u0631\u0626",
+   "options": "ER Patient Intake",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "patient_intake.patient",
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0631\u064a\u0636",
+   "options": "Patient",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_intake.\u0627\u0633\u0645_\u0627\u0644\u0645\u0631\u064a\u0636",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0631\u064a\u0636",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ospe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "queue_number",
+   "fieldtype": "Int",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062f\u0648\u0631",
+   "read_only": 1
+  },
+  {
+   "fieldname": "queue_status",
+   "fieldtype": "Select",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",
+   "options": "\n\u0641\u064a \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631\n\u062a\u0645 \u0627\u0644\u0627\u062a\u0635\u0627\u0644\n\u0645\u0639 \u0627\u0644\u0645\u0645\u0631\u0636\u0629\n\u0645\u0639 \u0627\u0644\u0637\u0628\u064a\u0628\n\u062a\u0645 \u062a\u062e\u0635\u064a\u0635 \u0627\u0644\u0633\u0631\u064a\u0631\n\u0627\u0643\u062a\u0645\u0644\n\u062a\u0645 \u0627\u0644\u0625\u0644\u063a\u0627\u0621"
+  },
+  {
+   "default": "1",
+   "fieldname": "active_queue",
+   "fieldtype": "Check",
+   "label": "\u0641\u064a \u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631"
+  },
+  {
+   "fieldname": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a_\u0642\u0627\u0626\u0645\u0629_\u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631_section",
+   "fieldtype": "Section Break",
+   "label": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631"
+  },
+  {
+   "fieldname": "triage_level",
+   "fieldtype": "Link",
+   "label": "\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0641\u0631\u0632",
+   "options": "ER Triage Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629",
+   "options": "ER Priority"
+  },
+  {
+   "fieldname": "waiting_area",
+   "fieldtype": "Link",
+   "label": "\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631",
+   "options": "ER Waiting Area"
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0648\u0642\u0639 \u0627\u0644\u062d\u0627\u0644\u064a",
+   "options": "ER Current Location"
+  },
+  {
+   "fieldname": "arrival_time",
+   "fieldtype": "Datetime",
+   "label": "\u0648\u0642\u062a \u0627\u0644\u062f\u062e\u0648\u0644 \u0644\u0644\u0637\u0627\u0628\u0648\u0631",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cvke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "waiting_minutes",
+   "fieldtype": "Int",
+   "label": "\u0645\u062f\u0629 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631 (\u062f\u0642\u064a\u0642\u0629)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "check_yuaq",
+   "fieldtype": "Check"
+  },
+  {
+   "fieldname": "\u062a\u0639\u064a\u064a\u0646_\u0627\u0644\u0637\u0628\u064a\u0628_\u0648\u0627\u0644\u0645\u0645\u0631\u0636_section",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0639\u064a\u064a\u0646 \u0627\u0644\u0637\u0628\u064a\u0628 \u0648\u0627\u0644\u0645\u0645\u0631\u0636"
+  },
+  {
+   "fieldname": "attending_physician",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0637\u0628\u064a\u0628 \u0627\u0644\u0645\u0633\u0624\u0648\u0644",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "column_break_bsdt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_nurse",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0645\u0631\u0636 \u0627\u0644\u0645\u0633\u0624\u0648\u0644",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "called_time",
+   "fieldtype": "Datetime",
+   "label": "Called Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "examination_start",
+   "fieldtype": "Datetime",
+   "label": "Examination Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "response_minutes",
+   "fieldtype": "Int",
+   "label": "\u0632\u0645\u0646 \u0627\u0644\u0627\u0633\u062a\u062c\u0627\u0628\u0629",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vqdg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bed_assignment_column",
+   "fieldtype": "Column Break",
+   "label": "Bed Assignment"
+  },
+  {
+   "fieldname": "bed",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0633\u0631\u064a\u0631",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "column_break_dszm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bed_status",
+   "fieldtype": "Link",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0633\u0631\u064a\u0631",
+   "options": "ER Bed Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bed_assigned_time",
+   "fieldtype": "Datetime",
+   "label": "\u0648\u0642\u062a \u062a\u062e\u0635\u064a\u0635 \u0627\u0644\u0633\u0631\u064a\u0631",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bed_released_time",
+   "fieldtype": "Datetime",
+   "label": "\u0648\u0642\u062a \u0625\u062e\u0644\u0627\u0621 \u0627\u0644\u0633\u0631\u064a\u0631",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_flow_timing_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Flow Timing"
+  },
+  {
+   "fieldname": "triage_start_time",
+   "fieldtype": "Datetime",
+   "label": "\u0628\u062f\u0627\u064a\u0629 \u0627\u0644\u0641\u0631\u0632",
+   "read_only": 1
+  },
+  {
+   "fieldname": "triage_end_time",
+   "fieldtype": "Datetime",
+   "label": "\u0646\u0647\u0627\u064a\u0629 \u0627\u0644\u0641\u0631\u0632",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dygw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctor_start_time",
+   "fieldtype": "Datetime",
+   "label": "\u0628\u062f\u0627\u064a\u0629 \u0645\u0639\u0627\u064a\u0646\u0629 \u0627\u0644\u0637\u0628\u064a\u0628",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disposition_time",
+   "fieldtype": "Datetime",
+   "label": "\u0648\u0642\u062a \u0627\u062a\u062e\u0627\u0630 \u0627\u0644\u0642\u0631\u0627\u0631 \u0627\u0644\u0637\u0628\u064a",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discharge_time",
+   "fieldtype": "Datetime",
+   "label": "\u0648\u0642\u062a \u0627\u0644\u062e\u0631\u0648\u062c",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-22 17:09:16.462136",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Patient Queue",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

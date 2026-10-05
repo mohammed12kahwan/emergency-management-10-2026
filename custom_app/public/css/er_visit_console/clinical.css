@@ -1,0 +1,3969 @@
+
+/* =====================================================
+   ER CLINICAL
+   الفحص السريري
+   Unified with Labs / Radiology / Medications / Procedures
+===================================================== */
+
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+.clinical-section {
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    direction:
+        rtl;
+
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.clinical-section
+.clinical-card {
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    margin:
+        0 0 14px 0;
+
+    padding:
+        0;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        10px;
+
+    background:
+        var(--fg-color);
+
+    box-shadow:
+        var(--card-shadow);
+
+    overflow:
+        visible !important;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.clinical-section
+.clinical-title {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        12px;
+
+    width:
+        100%;
+
+    min-height:
+        46px;
+
+    padding:
+        10px 14px;
+
+    box-sizing:
+        border-box;
+
+    background:
+        var(--bg-color);
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    border-radius:
+        10px 10px 0 0;
+
+}
+
+
+/* =====================================================
+   HEADER MAIN
+===================================================== */
+
+.clinical-section
+.clinical-title-main {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    min-width:
+        0;
+
+}
+
+
+/* =====================================================
+   HEADER ICON
+===================================================== */
+
+.clinical-section
+.clinical-title-icon {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        30px;
+
+    min-width:
+        30px;
+
+    height:
+        30px;
+
+    border-radius:
+        8px;
+
+    background:
+        var(--fg-color);
+
+    border:
+        1px solid var(--border-color);
+
+    font-size:
+        17px;
+
+    line-height:
+        1;
+
+}
+
+
+/* =====================================================
+   HEADER CONTENT
+===================================================== */
+
+.clinical-section
+.clinical-title-content {
+
+    min-width:
+        0;
+
+}
+
+
+.clinical-section
+.clinical-title-text {
+
+    color:
+        var(--text-color);
+
+    font-size:
+        15px;
+
+    font-weight:
+        800;
+
+}
+
+
+.clinical-section
+.clinical-title-subtitle {
+
+    margin-top:
+        2px;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        10px;
+
+}
+
+
+/* =====================================================
+   HEADER STATUS
+===================================================== */
+
+.clinical-section
+.clinical-title-status {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    flex-shrink:
+        0;
+
+    padding:
+        5px 9px;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        999px;
+
+    background:
+        var(--fg-color);
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+}
+
+
+.clinical-section
+.clinical-status-dot {
+
+    width:
+        7px;
+
+    height:
+        7px;
+
+    min-width:
+        7px;
+
+    border-radius:
+        50%;
+
+    background:
+        #28a745;
+
+}
+
+
+/* =====================================================
+   INNER SECTION
+===================================================== */
+
+.clinical-section
+.clinical-section-card {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    margin:
+        0;
+
+    padding:
+        14px;
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    background:
+        var(--fg-color);
+
+    overflow:
+        visible !important;
+
+}
+
+
+.clinical-section
+.clinical-section-card:last-of-type {
+
+    border-bottom:
+        none;
+
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.clinical-section
+.clinical-section-card-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    width:
+        100%;
+
+    min-height:
+        34px;
+
+    margin-bottom:
+        12px;
+
+    padding:
+        8px 10px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        7px;
+
+    background:
+        var(--bg-color);
+
+}
+
+
+.clinical-section
+.clinical-section-card-title {
+
+    color:
+        var(--text-color);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+
+}
+
+
+/* =====================================================
+   ENTRY TABLE WRAPPER
+   مهم للقائمة المنسدلة
+===================================================== */
+
+.clinical-section
+.clinical-entry-table-wrapper {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    overflow:
+        visible !important;
+
+}
+
+
+/* =====================================================
+   CLINICAL ENTRY TABLE
+===================================================== */
+
+.clinical-section
+.clinical-entry-table {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+
+    width:
+        100%;
+
+    margin:
+        0;
+
+    border-collapse:
+        collapse;
+
+    table-layout:
+        fixed;
+
+    box-sizing:
+        border-box;
+
+    overflow:
+        visible !important;
+
+}
+
+
+/* =====================================================
+   ENTRY TABLE CELLS
+===================================================== */
+
+.clinical-section
+.clinical-entry-table th,
+.clinical-section
+.clinical-entry-table td {
+
+    position:
+        relative;
+
+    padding:
+        8px 10px;
+
+    vertical-align:
+        middle;
+
+    text-align:
+        right;
+
+    box-sizing:
+        border-box;
+
+    overflow:
+        visible !important;
+
+}
+
+
+/* =====================================================
+   ENTRY TABLE HEADER
+===================================================== */
+
+.clinical-section
+.clinical-entry-table th {
+
+    background:
+        var(--bg-color);
+
+    color:
+        var(--text-color);
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   ENTRY TABLE BODY
+===================================================== */
+
+.clinical-section
+.clinical-entry-table tbody td {
+
+    background:
+        var(--fg-color);
+
+}
+
+
+/* =====================================================
+   FIELD
+===================================================== */
+
+.clinical-section
+.clinical-field {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    margin:
+        0;
+
+    padding:
+        8px 10px;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+/* =====================================================
+   FIELD LABEL
+===================================================== */
+
+.clinical-section
+.clinical-field label {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    margin:
+        0 0 6px 0;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    line-height:
+        1.4;
+
+}
+
+
+/* =====================================================
+   FORM CONTROLS
+   نفس Labs / Radiology
+===================================================== */
+
+.clinical-section
+.clinical-field input,
+.clinical-section
+.clinical-field select {
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    box-sizing:
+        border-box;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =====================================================
+   SEARCH WRAPPER
+===================================================== */
+
+.clinical-section
+.clinical-search-wrapper {
+
+    position:
+        relative !important;
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    box-sizing:
+        border-box;
+
+    z-index:
+        9999;
+
+}
+
+
+/* =====================================================
+   SEARCH INPUT
+===================================================== */
+
+.clinical-section
+.clinical-search-input {
+
+    display:
+        block !important;
+
+    width:
+        100% !important;
+
+    min-width:
+        0 !important;
+
+    box-sizing:
+        border-box !important;
+
+    font-size:
+        12px !important;
+
+}
+
+
+/* =====================================================
+   SEARCH DROPDOWN
+===================================================== */
+
+.clinical-section
+.clinical-search-suggestions {
+
+    position:
+        absolute !important;
+
+    top:
+        calc(100% + 2px) !important;
+
+    right:
+        0 !important;
+
+    left:
+        0 !important;
+
+    z-index:
+        9999 !important;
+
+    display:
+        none;
+
+    width:
+        100% !important;
+
+    max-height:
+        260px !important;
+
+    overflow-y:
+        auto !important;
+
+    overflow-x:
+        hidden !important;
+
+    box-sizing:
+        border-box !important;
+
+    background:
+        var(--fg-color) !important;
+
+    border:
+        1px solid var(--border-color) !important;
+
+    border-radius:
+        7px !important;
+
+    box-shadow:
+        0 8px 24px
+        rgba(15,23,42,.20) !important;
+
+}
+
+
+/* =====================================================
+   SEARCH ITEM
+===================================================== */
+
+.clinical-section
+.clinical-search-item {
+
+    display:
+        block !important;
+
+    width:
+        100% !important;
+
+    min-height:
+        38px !important;
+
+    padding:
+        8px 10px !important;
+
+    box-sizing:
+        border-box !important;
+
+    border-bottom:
+        1px solid var(--border-color) !important;
+
+    background:
+        var(--fg-color) !important;
+
+    color:
+        var(--text-color) !important;
+
+    font-family:
+        inherit !important;
+
+    font-size:
+        12px !important;
+
+    line-height:
+        1.5 !important;
+
+    text-align:
+        right !important;
+
+    cursor:
+        pointer !important;
+
+}
+
+
+.clinical-section
+.clinical-search-item:hover {
+
+    background:
+        var(--bg-color) !important;
+
+}
+
+
+.clinical-section
+.clinical-search-item:last-child {
+
+    border-bottom:
+        none !important;
+
+}
+
+
+/* =====================================================
+   EMPTY SEARCH
+===================================================== */
+
+.clinical-section
+.clinical-search-empty {
+
+    padding:
+        10px !important;
+
+    color:
+        var(--text-muted) !important;
+
+    font-size:
+        11px !important;
+
+    text-align:
+        center !important;
+
+}
+
+
+/* =====================================================
+   MULTI SELECT LIST
+===================================================== */
+
+.clinical-section
+.clinical-selected-list {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        6px;
+
+    width:
+        100%;
+
+    margin-top:
+        7px;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+/* =====================================================
+   SELECTED ITEM
+===================================================== */
+
+.clinical-section
+.clinical-selected-item {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    min-height:
+        28px;
+
+    max-width:
+        100%;
+
+    padding:
+        4px 8px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        6px;
+
+    background:
+        var(--bg-color);
+
+    color:
+        var(--text-color);
+
+    font-size:
+        11px;
+
+}
+
+
+/* =====================================================
+   SELECTED TEXT
+===================================================== */
+
+.clinical-section
+.clinical-selected-text {
+
+    min-width:
+        0;
+
+    overflow-wrap:
+        anywhere;
+
+}
+
+
+/* =====================================================
+   REMOVE BUTTON
+===================================================== */
+
+.clinical-section
+.clinical-selected-remove {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        20px;
+
+    height:
+        20px;
+
+    min-width:
+        20px;
+
+    padding:
+        0;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        transparent;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        16px;
+
+    line-height:
+        1;
+
+    cursor:
+        pointer;
+
+}
+
+
+.clinical-section
+.clinical-selected-remove:hover {
+
+    background:
+        rgba(220,53,69,.10);
+
+    color:
+        #dc3545;
+
+}
+
+
+/* =====================================================
+   VITALS HEADER
+===================================================== */
+
+.clinical-section
+.vitals-title {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        10px;
+
+    width:
+        100%;
+
+    min-height:
+        42px;
+
+    margin:
+        0 0 10px;
+
+    padding:
+        9px 10px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        7px;
+
+    background:
+        var(--bg-color);
+
+}
+
+
+/* =====================================================
+   VITALS TITLE
+===================================================== */
+
+.clinical-section
+.vitals-title-text {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    min-width:
+        0;
+
+}
+
+
+.clinical-section
+.vitals-title-icon {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        27px;
+
+    min-width:
+        27px;
+
+    height:
+        27px;
+
+    border-radius:
+        7px;
+
+    background:
+        var(--fg-color);
+
+    border:
+        1px solid var(--border-color);
+
+    font-size:
+        14px;
+
+}
+
+
+.clinical-section
+.vitals-main-title {
+
+    color:
+        var(--text-color);
+
+    font-size:
+        13px;
+
+    font-weight:
+        800;
+
+}
+
+
+.clinical-section
+.vitals-subtitle {
+
+    margin-top:
+        2px;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        9px;
+
+}
+
+
+/* =====================================================
+   VITALS ACTIONS
+===================================================== */
+
+.clinical-section
+.vitals-title-actions {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    flex-shrink:
+        0;
+
+}
+
+
+.clinical-section
+.vitals-record-button,
+.clinical-section
+.vitals-history-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        34px;
+
+    padding:
+        6px 10px;
+
+    box-sizing:
+        border-box;
+
+    border-radius:
+        6px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    white-space:
+        nowrap;
+
+}
+
+
+/* =====================================================
+   VITALS SCHEDULE
+===================================================== */
+
+.clinical-section
+.vitals-schedule {
+
+    width:
+        100%;
+
+    margin-bottom:
+        10px;
+
+    box-sizing:
+        border-box;
+
+    overflow:
+        visible !important;
+
+}
+
+
+.clinical-section
+.vitals-schedule-card {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap:
+        0;
+
+    width:
+        100%;
+
+    padding:
+        0;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    background:
+        var(--fg-color);
+
+}
+
+
+.clinical-section
+.vitals-schedule-item {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    min-width:
+        0;
+
+    padding:
+        8px 10px;
+
+    box-sizing:
+        border-box;
+
+    border-left:
+        1px solid var(--border-color);
+
+    background:
+        var(--fg-color);
+
+}
+
+
+.clinical-section
+.vitals-schedule-item:last-child {
+
+    border-left:
+        none;
+
+}
+
+
+.clinical-section
+.vitals-schedule-label {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+}
+
+
+.clinical-section
+.vitals-schedule-item strong {
+
+    color:
+        var(--text-color);
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    overflow-wrap:
+        anywhere;
+
+}
+
+
+/* =====================================================
+   DUE NOW
+===================================================== */
+
+.clinical-section
+.vitals-due-now {
+
+    background:
+        #fff7ed;
+
+    border-color:
+        #f59e0b;
+
+}
+
+
+.clinical-section
+.vitals-due-now strong {
+
+    color:
+        #b45309;
+
+}
+
+
+/* =====================================================
+   VITALS ENTRY TABLE
+===================================================== */
+
+.clinical-section
+.clinical-vitals-entry-table {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+
+    width:
+        100%;
+
+    margin:
+        0;
+
+    border-collapse:
+        collapse;
+
+    table-layout:
+        fixed;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+/* =====================================================
+   VITAL TABLE CELLS
+===================================================== */
+
+.clinical-section
+.clinical-vitals-entry-table th,
+.clinical-section
+.clinical-vitals-entry-table td {
+
+    padding:
+        8px 10px;
+
+    vertical-align:
+        middle;
+
+    text-align:
+        right;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+/* =====================================================
+   VITAL TABLE HEADER
+===================================================== */
+
+.clinical-section
+.clinical-vitals-entry-table th {
+
+    background:
+        var(--bg-color);
+
+    color:
+        var(--text-color);
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    white-space:
+        nowrap;
+
+}
+
+
+/* =====================================================
+   VITAL FORM CONTROLS
+===================================================== */
+
+.clinical-section
+.clinical-vitals-entry-table input,
+.clinical-section
+.clinical-vitals-entry-table select {
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    box-sizing:
+        border-box;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =====================================================
+   VITAL INPUT WRAPPER
+===================================================== */
+
+.clinical-section
+.vital-input-wrapper {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+/* =====================================================
+   VITAL UNIT
+===================================================== */
+
+.clinical-section
+.vital-unit {
+
+    position:
+        absolute;
+
+    left:
+        8px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    pointer-events:
+        none;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        9px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   NOTES TABLE
+===================================================== */
+
+.clinical-section
+.clinical-notes-entry-table {
+
+    width:
+        100%;
+
+    margin:
+        0;
+
+    border-collapse:
+        collapse;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+.clinical-section
+.clinical-notes-entry-table td {
+
+    padding:
+        8px 10px;
+
+    vertical-align:
+        middle;
+
+    text-align:
+        right;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+/* =====================================================
+   NOTES CONTROL
+===================================================== */
+
+.clinical-section
+.clinical-notes-entry-table textarea {
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    box-sizing:
+        border-box;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.clinical-section
+.clinical-actions {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        flex-start;
+
+    gap:
+        8px;
+
+    width:
+        100%;
+
+    padding:
+        10px 14px;
+
+    box-sizing:
+        border-box;
+
+    background:
+        var(--bg-color);
+
+    border-top:
+        1px solid var(--border-color);
+
+    border-radius:
+        0 0 10px 10px;
+
+}
+
+
+/* =====================================================
+   SAVE
+===================================================== */
+
+.clinical-section
+.clinical-save-button,
+.clinical-section
+#save-clinical {
+
+    min-width:
+        150px;
+
+    min-height:
+        36px;
+
+    padding:
+        0 12px;
+
+    border-radius:
+        6px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   PATIENT HISTORY
+===================================================== */
+
+.patient-history-container {
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    direction:
+        rtl;
+
+    text-align:
+        right;
+
+}
+
+
+.patient-history-header {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:
+        10px;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.patient-history-header > div {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    min-width:
+        0;
+
+    padding:
+        10px 12px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        7px;
+
+    background:
+        var(--bg-color);
+
+    color:
+        var(--text-color);
+
+    font-size:
+        11px;
+
+}
+
+
+.patient-history-header strong {
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+}
+
+
+.patient-history-header span {
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+
+}
+
+
+/* =====================================================
+   HISTORY TABS
+===================================================== */
+
+.patient-history-tabs {
+
+    display:
+        flex;
+
+    gap:
+        6px;
+
+    margin-bottom:
+        10px;
+
+    padding:
+        4px;
+
+    box-sizing:
+        border-box;
+
+    border-radius:
+        7px;
+
+    background:
+        var(--bg-color);
+
+}
+
+
+.patient-history-tab {
+
+    flex:
+        1;
+
+    min-height:
+        36px;
+
+    border:
+        none !important;
+
+    border-radius:
+        6px !important;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   HISTORY FILTER
+===================================================== */
+
+.patient-history-filter {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    margin-bottom:
+        10px;
+
+    padding:
+        9px 11px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        7px;
+
+    background:
+        var(--bg-color);
+
+}
+
+
+.patient-history-filter label {
+
+    min-width:
+        80px;
+
+    margin:
+        0;
+
+    color:
+        var(--text-muted);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+}
+
+
+.patient-history-filter select {
+
+    flex:
+        1;
+
+    width:
+        100%;
+
+    min-width:
+        0;
+
+    box-sizing:
+        border-box;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =====================================================
+   HISTORY TABLE
+===================================================== */
+
+.patient-history-tab-content
+.table-responsive {
+
+    width:
+        100%;
+
+    overflow-x:
+        auto;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        7px;
+
+}
+
+
+.patient-history-tab-content table {
+
+    width:
+        100%;
+
+    min-width:
+        760px;
+
+    margin:
+        0;
+
+    border-collapse:
+        collapse;
+
+    table-layout:
+        fixed;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+.patient-history-tab-content
+table th,
+.patient-history-tab-content
+table td {
+
+    padding:
+        8px 10px;
+
+    vertical-align:
+        middle;
+
+    text-align:
+        right;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+.patient-history-tab-content
+table th {
+
+    background:
+        var(--bg-color);
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    color:
+        var(--text-color);
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.patient-history-tab-content
+table td {
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    color:
+        var(--text-color);
+
+    font-size:
+        10px;
+
+}
+
+
+.patient-history-tab-content
+table tbody tr:hover {
+
+    background:
+        var(--bg-color);
+
+}
+
+
+/* =====================================================
+   MEDICAL HISTORY
+===================================================== */
+
+.patient-history-tab-content
+.medical-history-card {
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    padding:
+        12px;
+
+    border:
+        1px solid var(--border-color);
+
+    border-radius:
+        7px;
+
+    background:
+        var(--fg-color);
+
+}
+
+
+.patient-history-tab-content
+.medical-history-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        10px;
+
+    padding:
+        9px 0;
+
+    border-bottom:
+        1px solid var(--border-color);
+
+    color:
+        var(--text-color);
+
+    font-size:
+        11px;
+
+}
+
+
+.patient-history-tab-content
+.medical-history-row:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+
+.patient-history-tab-content
+.medical-history-row strong {
+
+    flex-shrink:
+        0;
+
+    color:
+        var(--text-muted);
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.patient-history-empty {
+
+    width:
+        100%;
+
+    box-sizing:
+        border-box;
+
+    padding:
+        26px 15px;
+
+    border:
+        1px dashed var(--border-color);
+
+    border-radius:
+        7px;
+
+    background:
+        var(--bg-color);
+
+    color:
+        var(--text-muted);
+
+    text-align:
+        center;
+
+}
+
+
+.patient-history-empty-icon {
+
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    font-size:
+        25px;
+
+}
+
+
+.patient-history-empty-text {
+
+    font-size:
+        11px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .clinical-section
+    .clinical-vitals-entry-table {
+
+        min-width:
+            760px;
+
+    }
+
+
+    .clinical-section
+    .clinical-entry-table-wrapper {
+
+        overflow-x:
+            auto !important;
+
+    }
+
+
+    .clinical-section
+    .clinical-entry-table {
+
+        min-width:
+            620px;
+
+    }
+
+
+    .clinical-section
+    .vitals-schedule-card {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .clinical-section
+    .clinical-title-status {
+
+        display:
+            none;
+
+    }
+
+
+    .clinical-section
+    .vitals-title {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+    }
+
+
+    .clinical-section
+    .vitals-title-actions {
+
+        width:
+            100%;
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .clinical-section
+    .vitals-record-button,
+    .clinical-section
+    .vitals-history-button {
+
+        width:
+            100%;
+
+    }
+
+
+    .clinical-section
+    .clinical-entry-table-wrapper {
+
+        overflow-x:
+            auto !important;
+
+    }
+
+
+    .clinical-section
+    .vitals-schedule-card {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .clinical-section
+    .clinical-save-button,
+    .clinical-section
+    #save-clinical {
+
+        width:
+            100%;
+
+    }
+
+
+    .patient-history-header {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .patient-history-tabs {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .patient-history-filter {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+    }
+
+
+    .patient-history-filter label {
+
+        min-width:
+            0;
+
+    }
+
+}
+
+
+/* =====================================================
+   CLINICAL PATIENT/VISIT SUMMARY
+   ثابت داخل تدفق الصفحة — غير عائم
+===================================================== */
+
+.er-clinical-workspace .er-clinical-context-card {
+
+    position: static !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    float: none !important;
+
+    clear: both !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 0 14px 0 !important;
+
+    box-sizing: border-box !important;
+
+    transform: none !important;
+
+    z-index: auto !important;
+
+}
+
+.er-clinical-workspace .er-clinical-context-title {
+
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.er-clinical-workspace .er-clinical-context-grid {
+
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+
+/* =====================================================
+   CLINICAL — TWO PRIMARY CARDS STACK
+===================================================== */
+
+.er-clinical-workspace
+.er-clinical-body {
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    position: static !important;
+
+    float: none !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-clinical-workspace
+.er-clinical-cards-stack {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    gap: 12px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    position: static !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* البطاقة الأولى: بيانات المريض والزيارة */
+
+.er-clinical-workspace
+.er-clinical-cards-stack
+.er-clinical-context-card {
+
+    order: 1 !important;
+
+    display: block !important;
+
+    position: static !important;
+
+    float: none !important;
+
+    clear: both !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 10px 12px !important;
+
+    box-sizing: border-box !important;
+
+    transform: none !important;
+
+    z-index: 1 !important;
+
+}
+
+/* بيانات المريض في صفوف مضغوطة */
+
+.er-clinical-workspace
+.er-clinical-context-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr)) !important;
+
+    gap: 7px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-clinical-workspace
+.er-clinical-context-item {
+
+    min-width: 0 !important;
+
+    min-height: 44px !important;
+
+    margin: 0 !important;
+
+    padding: 6px 8px !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* البطاقة الثانية: الترياج + العلامات الحيوية */
+
+.er-clinical-workspace
+.er-clinical-cards-stack
+.er-clinical-nursing-card {
+
+    order: 2 !important;
+
+    display: block !important;
+
+    position: static !important;
+
+    float: none !important;
+
+    clear: both !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 360px !important;
+
+    margin: 0 !important;
+
+    padding: 12px !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* لا تجعل أجزاء الترياج/الحيوية عائمة */
+
+.er-clinical-workspace
+.er-clinical-nursing-card
+.er-clinical-form-section {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    position: static !important;
+
+    float: none !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 0 12px 0 !important;
+
+}
+
+.er-clinical-workspace
+.er-clinical-nursing-card
+.er-clinical-form-section:last-child {
+
+    margin-bottom: 0 !important;
+
+}
+
+@media (max-width: 1100px) {
+
+    .er-clinical-workspace
+    .er-clinical-context-grid {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .er-clinical-workspace
+    .er-clinical-context-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .er-clinical-workspace
+    .er-clinical-context-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   GLOBAL ER PATIENT / VITALS HEADER
+===================================================== */
+
+.er-visit-console .er-main-header {
+
+    display: none !important;
+
+}
+
+.er-visit-console .er-global-patient-header {
+
+    position: static !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    gap: 10px !important;
+
+    margin: 0 0 12px 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+    float: none !important;
+
+    clear: both !important;
+
+}
+
+
+.er-visit-console
+.er-global-patient-card,
+.er-visit-console
+.er-global-vitals-card {
+
+    position: static !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+
+    float: none !important;
+
+    clear: both !important;
+
+    background: var(--card-bg, #ffffff) !important;
+
+    border: 1px solid var(--border-color, #d1d8dd) !important;
+
+    border-radius: 8px !important;
+
+    box-shadow: none !important;
+
+}
+
+
+.er-visit-console
+.er-global-patient-card {
+
+    padding: 8px 10px !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-card {
+
+    padding: 10px 12px !important;
+
+}
+
+
+.er-visit-console
+.er-global-card-title {
+
+    font-size: 14px !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.4 !important;
+
+    margin: 0 0 7px 0 !important;
+
+    padding: 0 0 6px 0 !important;
+
+    border-bottom: 1px solid var(--border-color, #e5e7eb) !important;
+
+}
+
+
+.er-visit-console
+.er-global-patient-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr)) !important;
+
+    gap: 5px !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+.er-visit-console
+.er-global-item {
+
+    min-width: 0 !important;
+
+    min-height: 40px !important;
+
+    padding: 5px 7px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid var(--border-color, #e5e7eb) !important;
+
+    border-radius: 6px !important;
+
+}
+
+
+.er-visit-console
+.er-global-item span,
+.er-visit-console
+.er-global-vital span,
+.er-visit-console
+.er-global-vitals-notes span {
+
+    display: block !important;
+
+    font-size: 10px !important;
+
+    line-height: 1.3 !important;
+
+    color: var(--text-muted, #6b7280) !important;
+
+    margin-bottom: 2px !important;
+
+}
+
+
+.er-visit-console
+.er-global-item strong,
+.er-visit-console
+.er-global-vital strong,
+.er-visit-console
+.er-global-vitals-notes strong {
+
+    display: block !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.35 !important;
+
+    overflow-wrap: anywhere !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-meta {
+
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+
+    gap: 5px 14px !important;
+
+    margin: 0 0 8px 0 !important;
+
+    font-size: 10px !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 6px !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+.er-visit-console
+.er-global-vital {
+
+    min-width: 0 !important;
+
+    min-height: 46px !important;
+
+    padding: 6px 8px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid var(--border-color, #e5e7eb) !important;
+
+    border-radius: 6px !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-notes {
+
+    margin-top: 7px !important;
+
+    padding: 6px 8px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid var(--border-color, #e5e7eb) !important;
+
+    border-radius: 6px !important;
+
+}
+
+
+@media (max-width: 1100px) {
+
+    .er-visit-console
+    .er-global-patient-grid {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .er-visit-console
+    .er-global-patient-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .er-visit-console
+    .er-global-patient-grid,
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   FINAL GLOBAL PATIENT HEADER — CLINICAL STYLE
+===================================================== */
+
+.er-visit-console .er-global-patient-header {
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    gap: 8px !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+
+    position: static !important;
+    float: none !important;
+    clear: both !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-visit-console .er-global-patient-card,
+.er-visit-console .er-global-vitals-card {
+
+    position: static !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid #d7dee7 !important;
+
+    border-radius: 6px !important;
+
+    background: #ffffff !important;
+
+    box-shadow: none !important;
+
+    float: none !important;
+    clear: both !important;
+
+    color: #263238 !important;
+
+}
+
+.er-visit-console .er-global-patient-card {
+
+    padding: 7px 9px !important;
+
+}
+
+.er-visit-console .er-global-vitals-card {
+
+    padding: 8px 10px !important;
+
+    background: #f8fafc !important;
+
+}
+
+.er-visit-console .er-global-card-title {
+
+    display: flex !important;
+    align-items: center !important;
+
+    min-height: 24px !important;
+
+    margin: 0 0 6px 0 !important;
+    padding: 0 0 5px 0 !important;
+
+    border-bottom: 1px solid #e4e9ef !important;
+
+    color: #344454 !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+
+    line-height: 1.35 !important;
+
+}
+
+.er-visit-console .er-global-patient-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr)) !important;
+
+    gap: 5px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-visit-console .er-global-item {
+
+    min-width: 0 !important;
+
+    min-height: 38px !important;
+
+    margin: 0 !important;
+    padding: 5px 7px !important;
+
+    border: 1px solid #e3e8ee !important;
+
+    border-radius: 4px !important;
+
+    background: #fbfcfd !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-visit-console .er-global-item span,
+.er-visit-console .er-global-vital span,
+.er-visit-console .er-global-vitals-notes span {
+
+    display: block !important;
+
+    margin: 0 0 2px 0 !important;
+
+    color: #758291 !important;
+
+    font-size: 10px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.25 !important;
+
+}
+
+.er-visit-console .er-global-item strong {
+
+    display: block !important;
+
+    min-width: 0 !important;
+
+    color: #273643 !important;
+
+    font-size: 11.5px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.3 !important;
+
+    overflow-wrap: anywhere !important;
+
+}
+
+.er-visit-console .er-global-vitals-meta {
+
+    display: flex !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+
+    gap: 4px 12px !important;
+
+    margin: 0 0 6px 0 !important;
+
+    color: #687784 !important;
+
+    font-size: 10px !important;
+
+}
+
+.er-visit-console .er-global-vitals-meta strong {
+
+    color: #3c4b57 !important;
+
+    font-weight: 600 !important;
+
+}
+
+.er-visit-console .er-global-vitals-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 5px !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-visit-console .er-global-vital {
+
+    min-width: 0 !important;
+
+    min-height: 42px !important;
+
+    margin: 0 !important;
+
+    padding: 5px 7px !important;
+
+    border: 1px solid #e0e6ec !important;
+
+    border-radius: 4px !important;
+
+    background: #ffffff !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-visit-console .er-global-vital strong {
+
+    display: block !important;
+
+    color: #273643 !important;
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.3 !important;
+
+    overflow-wrap: anywhere !important;
+
+}
+
+.er-visit-console .er-global-vitals-notes {
+
+    margin-top: 6px !important;
+
+    padding: 5px 7px !important;
+
+    border: 1px solid #e0e6ec !important;
+
+    border-radius: 4px !important;
+
+    background: #ffffff !important;
+
+    box-sizing: border-box !important;
+
+}
+
+.er-visit-console .er-global-vitals-notes strong {
+
+    display: block !important;
+
+    color: #3b4853 !important;
+
+    font-size: 11px !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.35 !important;
+
+    overflow-wrap: anywhere !important;
+
+}
+
+@media (max-width: 1100px) {
+
+    .er-visit-console .er-global-patient-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .er-visit-console .er-global-patient-grid,
+    .er-visit-console .er-global-vitals-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .er-visit-console .er-global-patient-grid,
+    .er-visit-console .er-global-vitals-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+
+
+
+/* =====================================================
+   FINAL — ULTRA COMPACT GLOBAL ER HEADER
+===================================================== */
+
+.er-visit-console {
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+    background: #f3f5f7 !important;
+
+}
+
+
+.er-visit-console
+.er-global-patient-header-anchor {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 0 4px 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+.er-visit-console
+.er-global-header-stack {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 4px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 4px !important;
+
+    box-sizing: border-box !important;
+
+    background: #edf1f4 !important;
+
+    border: 1px solid #d4dbe1 !important;
+
+    border-radius: 5px !important;
+
+}
+
+
+/* =====================================================
+   CARD 1 — PATIENT / VISIT
+===================================================== */
+
+.er-visit-console
+.er-global-header-stack
+.er-global-patient-card {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 4px 6px !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #d7dee4 !important;
+
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+
+}
+
+
+.er-visit-console
+.er-global-header-stack
+.er-global-patient-card
+.er-global-card-title {
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    min-height: 18px !important;
+
+    margin: 0 0 3px 0 !important;
+
+    padding: 0 5px 2px 0 !important;
+
+    border-bottom: 1px solid #e5e9ed !important;
+
+    color: #3a4752 !important;
+
+    font-size: 11px !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.1 !important;
+
+}
+
+
+.er-visit-console
+.er-global-header-stack
+.er-global-patient-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(10, minmax(0, 1fr)) !important;
+
+    gap: 3px !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+.er-visit-console
+.er-global-header-stack
+.er-global-item {
+
+    min-width: 0 !important;
+
+    min-height: 29px !important;
+
+    margin: 0 !important;
+
+    padding: 3px 4px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid #e1e6eb !important;
+
+    border-radius: 3px !important;
+
+    background: #fafbfc !important;
+
+}
+
+
+.er-visit-console
+.er-global-item span {
+
+    display: block !important;
+
+    margin: 0 !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.1 !important;
+
+    color: #7a8792 !important;
+
+}
+
+
+.er-visit-console
+.er-global-item strong {
+
+    display: block !important;
+
+    margin-top: 1px !important;
+
+    font-size: 9.5px !important;
+
+    line-height: 1.15 !important;
+
+    color: #293640 !important;
+
+    font-weight: 600 !important;
+
+    white-space: nowrap !important;
+
+    overflow: hidden !important;
+
+    text-overflow: ellipsis !important;
+
+}
+
+
+/* =====================================================
+   CARD 2 — TRIAGE / LATEST VITAL SIGNS
+===================================================== */
+
+.er-visit-console
+.er-global-header-stack
+.er-global-vitals-card {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 4px 6px !important;
+
+    box-sizing: border-box !important;
+
+    background: #f7f9fa !important;
+
+    border: 1px solid #cfd8df !important;
+
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+
+}
+
+
+.er-visit-console
+.er-global-header-stack
+.er-global-vitals-card
+.er-global-card-title {
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    min-height: 18px !important;
+
+    margin: 0 0 3px 0 !important;
+
+    padding: 0 5px 2px 0 !important;
+
+    border-bottom: 1px solid #e0e6eb !important;
+
+    color: #3a4752 !important;
+
+    font-size: 11px !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.1 !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-meta {
+
+    display: inline-flex !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 0 9px !important;
+
+    margin: 0 0 3px 10px !important;
+
+    padding: 0 !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.1 !important;
+
+    color: #74818b !important;
+
+    vertical-align: middle !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(8, minmax(0, 1fr)) !important;
+
+    gap: 3px !important;
+
+    width: 100% !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+.er-visit-console
+.er-global-vital {
+
+    min-width: 0 !important;
+
+    min-height: 30px !important;
+
+    margin: 0 !important;
+
+    padding: 3px 4px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid #dbe2e7 !important;
+
+    border-radius: 3px !important;
+
+    background: #ffffff !important;
+
+}
+
+
+.er-visit-console
+.er-global-vital span {
+
+    display: block !important;
+
+    margin: 0 !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.1 !important;
+
+    color: #7a8792 !important;
+
+}
+
+
+.er-visit-console
+.er-global-vital strong {
+
+    display: block !important;
+
+    margin-top: 1px !important;
+
+    font-size: 9.5px !important;
+
+    line-height: 1.15 !important;
+
+    color: #273640 !important;
+
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+
+    overflow: hidden !important;
+
+    text-overflow: ellipsis !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-notes {
+
+    margin-top: 3px !important;
+
+    padding: 3px 5px !important;
+
+    border: 1px solid #dbe2e7 !important;
+
+    border-radius: 3px !important;
+
+    background: #ffffff !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-notes span {
+
+    display: inline !important;
+
+    margin-left: 5px !important;
+
+    font-size: 8px !important;
+
+    color: #7a8792 !important;
+
+}
+
+
+.er-visit-console
+.er-global-vitals-notes strong {
+
+    display: inline !important;
+
+    font-size: 9px !important;
+
+    line-height: 1.1 !important;
+
+    color: #3b4852 !important;
+
+    font-weight: 500 !important;
+
+}
+
+
+/* =====================================================
+   TABS — MINIMUM HEIGHT / MINIMUM SPACE
+===================================================== */
+
+.er-visit-console .er-tabs {
+
+    margin: 4px 0 6px 0 !important;
+
+    padding: 3px !important;
+
+    gap: 4px !important;
+
+    background: transparent !important;
+
+}
+
+
+.er-visit-console .er-tabs .er-tab {
+
+    min-height: 36px !important;
+
+    padding: 6px 8px !important;
+
+    border-radius: 6px !important;
+
+    font-size: 11px !important;
+
+}
+
+
+.er-visit-console #er-content {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .er-visit-console
+    .er-global-patient-grid {
+
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr)) !important;
+
+    }
+
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .er-visit-console
+    .er-global-patient-grid,
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .er-visit-console
+    .er-global-patient-grid,
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+}
+
+
+/* =====================================================
+   FINAL TOP POSITION + LIGHT BLUE HEADER
+===================================================== */
+
+/* إزالة أي فراغ أعلى الـConsole */
+
+.er-visit-console {
+
+    padding-top: 0 !important;
+
+    margin-top: 0 !important;
+
+}
+
+
+/* نقطة الرأس تكون أول عنصر في الـConsole */
+
+.er-visit-console
+.er-global-patient-header-anchor {
+
+    position: static !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+
+/* الحاوية الزرقاء الخفيفة */
+
+.er-visit-console
+.er-global-header-stack {
+
+    position: static !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 4px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 4px !important;
+
+    box-sizing: border-box !important;
+
+    background: #eaf3fb !important;
+
+    border: 1px solid #bfd4e6 !important;
+
+    border-radius: 5px !important;
+
+    box-shadow: none !important;
+
+}
+
+
+/* =====================================================
+   المستطيل الأول — بيانات المريض والزيارة
+===================================================== */
+
+.er-visit-console
+.er-global-patient-card {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 5px 7px !important;
+
+    box-sizing: border-box !important;
+
+    background: #eef7ff !important;
+
+    border: 1px solid #bdd4e8 !important;
+
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+
+}
+
+
+/* =====================================================
+   المستطيل الثاني — الترياج وآخر Vital Signs
+===================================================== */
+
+.er-visit-console
+.er-global-vitals-card {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 5px 7px !important;
+
+    box-sizing: border-box !important;
+
+    background: #e5f1fb !important;
+
+    border: 1px solid #b5cfe4 !important;
+
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+
+}
+
+
+/* عناوين المستطيلين */
+
+.er-visit-console
+.er-global-card-title {
+
+    margin: 0 0 3px 0 !important;
+
+    padding: 0 0 3px 0 !important;
+
+    font-size: 11px !important;
+
+    line-height: 1.15 !important;
+
+    font-weight: 700 !important;
+
+    color: #31546d !important;
+
+    border-bottom: 1px solid #c9dbe9 !important;
+
+}
+
+
+/* بيانات المريض — مضغوطة */
+
+.er-visit-console
+.er-global-patient-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(10, minmax(0, 1fr)) !important;
+
+    gap: 3px !important;
+
+}
+
+
+.er-visit-console
+.er-global-item {
+
+    min-height: 28px !important;
+
+    padding: 3px 4px !important;
+
+    border: 1px solid #d0e0ec !important;
+
+    border-radius: 3px !important;
+
+    background: #f8fcff !important;
+
+}
+
+
+/* العلامات الحيوية — مضغوطة */
+
+.er-visit-console
+.er-global-vitals-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(8, minmax(0, 1fr)) !important;
+
+    gap: 3px !important;
+
+}
+
+
+.er-visit-console
+.er-global-vital {
+
+    min-height: 29px !important;
+
+    padding: 3px 4px !important;
+
+    border: 1px solid #c9dce9 !important;
+
+    border-radius: 3px !important;
+
+    background: #fafdff !important;
+
+}
+
+
+/* السجل والتاريخ والوقت */
+
+.er-visit-console
+.er-global-vitals-meta {
+
+    margin: 0 0 3px 0 !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.1 !important;
+
+}
+
+
+/* ملاحظات */
+
+.er-visit-console
+.er-global-vitals-notes {
+
+    margin-top: 3px !important;
+
+    padding: 3px 5px !important;
+
+    background: #fafdff !important;
+
+    border: 1px solid #c9dce9 !important;
+
+    border-radius: 3px !important;
+
+}
+
+
+/* =====================================================
+   التبويبات مباشرة تحت المستطيلين
+===================================================== */
+
+.er-visit-console .er-tabs {
+
+    margin-top: 4px !important;
+
+    margin-bottom: 6px !important;
+
+    padding: 3px !important;
+
+    gap: 4px !important;
+
+}
+
+
+/* =====================================================
+   تصغير التبويبات للحفاظ على مساحة الشاشة
+===================================================== */
+
+.er-visit-console .er-tabs .er-tab {
+
+    min-height: 36px !important;
+
+    padding: 6px 8px !important;
+
+    border-radius: 6px !important;
+
+    font-size: 11px !important;
+
+}
+
+
+/* الشاشات الصغيرة */
+
+@media (max-width: 800px) {
+
+    .er-visit-console
+    .er-global-patient-grid {
+
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr)) !important;
+
+    }
+
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .er-visit-console
+    .er-global-patient-grid,
+    .er-visit-console
+    .er-global-vitals-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+/* =====================================================
+   GLOBAL HEADER — CLEARER FONT
+===================================================== */
+
+.er-visit-console .er-global-card-title {
+
+    font-size: 13px !important;
+
+    line-height: 1.3 !important;
+
+    font-weight: 700 !important;
+
+}
+
+
+.er-visit-console .er-global-item span,
+.er-visit-console .er-global-vital span,
+.er-visit-console .er-global-vitals-notes span {
+
+    font-size: 10.5px !important;
+
+    line-height: 1.25 !important;
+
+}
+
+
+.er-visit-console .er-global-item strong {
+
+    font-size: 12px !important;
+
+    line-height: 1.3 !important;
+
+    font-weight: 700 !important;
+
+}
+
+
+.er-visit-console .er-global-vital strong {
+
+    font-size: 13px !important;
+
+    line-height: 1.3 !important;
+
+    font-weight: 700 !important;
+
+}
+
+
+.er-visit-console .er-global-vitals-meta {
+
+    font-size: 10px !important;
+
+    line-height: 1.25 !important;
+
+}
+
+
+.er-visit-console .er-global-vitals-notes strong {
+
+    font-size: 11.5px !important;
+
+    line-height: 1.3 !important;
+
+}
+
+
+.er-visit-console .er-tabs .er-tab {
+
+    font-size: 12px !important;
+
+    font-weight: 700 !important;
+
+}
+

@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2026-07-14 17:19:16.506861",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "esi_level",
+  "level_name",
+  "color",
+  "column_break_mjkx",
+  "description",
+  "is_active",
+  "display_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0643\u0648\u062f",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "esi_level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0641\u0631\u0632",
+   "options": "1\n\n2\n\n3\n\n4\n\n5",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "level_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0648\u0649",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "\u0627\u0644\u0644\u0648\u0646"
+  },
+  {
+   "fieldname": "column_break_mjkx",
+   "fieldtype": "Column Break",
+   "label": "Display Settings"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0648\u0635\u0641"
+  },
+  {
+   "default": "\u2714",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "\u0645\u0641\u0639\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "label": "Display Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-22 17:09:17.744177",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Triage Level",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

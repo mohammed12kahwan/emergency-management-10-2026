@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"nUYkIu-Efw\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\ud83e\ude7b \u0627\u0644\u0623\u0634\u0639\u0629</span>\",\"col\":12}},{\"id\":\"9Ls_9i5OCL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\ud83e\ude7b \u0627\u0644\u0623\u0634\u0639\u0629\",\"col\":3}}]",
+ "creation": "2026-07-18 18:35:33.890159",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "\ud83e\ude7b ",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\ud83e\ude7b \u0627\u0644\u0623\u0634\u0639\u0629",
+ "links": [],
+ "modified": "2026-07-29 18:17:47.256441",
+ "modified_by": "maron@gmail.com",
+ "module": "emergency_management",
+ "name": "\ud83e\ude7b \u0627\u0644\u0623\u0634\u0639\u0629",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0646\u0638\u0627\u0645 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u0639\u0627\u0645\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 33.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\ud83e\ude7b \u0627\u0644\u0623\u0634\u0639\u0629",
+   "link_to": "Radiology Examination",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\ud83e\ude7b \u0627\u0644\u0623\u0634\u0639\u0629"
+}

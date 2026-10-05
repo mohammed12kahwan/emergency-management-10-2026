@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2026-07-14 21:49:58.385266",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "code",
+  "insurance_class",
+  "column_break_uzmg",
+  "arabic_name",
+  "billing_type",
+  "section_break_iapy",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0643\u0648\u062f",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "insurance_class",
+   "fieldtype": "Data",
+   "label": "\u0641\u0626\u0629 \u0627\u0644\u062a\u0623\u0645\u064a\u0646",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uzmg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "arabic_name",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645 \u0628\u0627\u0644\u0639\u0631\u0628\u064a\u0629"
+  },
+  {
+   "fieldname": "billing_type",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0641\u0648\u062a\u0631\u0629",
+   "options": "Cash\nInsurance\nCompany\nGovernment\nFree"
+  },
+  {
+   "fieldname": "section_break_iapy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-14 21:54:39.808050",
+ "modified_by": "Administrator",
+ "module": "emergency_management",
+ "name": "ER Insurance Class",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

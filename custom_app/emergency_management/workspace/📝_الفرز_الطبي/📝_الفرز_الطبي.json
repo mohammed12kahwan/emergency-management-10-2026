@@ -1,0 +1,47 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"HBHJHiN7Fu\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\ud83d\udcdd \u0627\u0644\u0641\u0631\u0632 \u0627\u0644\u0637\u0628\u064a</span>\",\"col\":12}},{\"id\":\"VLuI2aEzNr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\ud83d\udccb\u2795 \u0627\u0636\u0627\u0641\u0629 \u0641\u0631\u0632 (\u062a\u0631\u064a\u0627\u062c)\",\"col\":3}},{\"id\":\"ERhhxCmthj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\ud83d\udcca\ud83e\ude7a \u0627\u0644\u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0645\u0641\u0631\u0648\u0632\u0629\",\"col\":3}}]",
+ "creation": "2026-07-18 18:31:58.361542",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "\ud83d\udcdd",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\ud83d\udcdd \u0627\u0644\u0641\u0631\u0632 \u0627\u0644\u0637\u0628\u064a",
+ "links": [],
+ "modified": "2026-07-29 18:28:07.120453",
+ "modified_by": "maron@gmail.com",
+ "module": "emergency_management",
+ "name": "\ud83d\udcdd \u0627\u0644\u0641\u0631\u0632 \u0627\u0644\u0637\u0628\u064a",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0646\u0638\u0627\u0645 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u0639\u0627\u0645\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 30.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "New",
+   "format": "()",
+   "label": "\ud83d\udccb\u2795 \u0627\u0636\u0627\u0641\u0629 \u0641\u0631\u0632 (\u062a\u0631\u064a\u0627\u062c)",
+   "link_to": "Vital Signs",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\ud83d\udcca\ud83e\ude7a \u0627\u0644\u062d\u0627\u0644\u0627\u062a \u0627\u0644\u0645\u0641\u0631\u0648\u0632\u0629",
+   "link_to": "Vital Signs",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\ud83d\udcdd \u0627\u0644\u0641\u0631\u0632 \u0627\u0644\u0637\u0628\u064a"
+}

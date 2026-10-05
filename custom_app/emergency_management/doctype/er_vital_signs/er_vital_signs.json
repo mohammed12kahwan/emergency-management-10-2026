@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-22 17:46:58.104413",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "er_patient_intake",
+  "bed",
+  "recorded_by",
+  "recorded_time",
+  "temperature",
+  "systolic_bp",
+  "diastolic_bp",
+  "heart_rate",
+  "respiratory_rate",
+  "spo2",
+  "pain_score",
+  "consciousness",
+  "blood_glucose",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0627\u0644\u0645\u0631\u064a\u0636",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "er_patient_intake",
+   "fieldtype": "Link",
+   "label": "\u0632\u064a\u0627\u0631\u0629 \u0627\u0644\u0637\u0648\u0627\u0631\u0626",
+   "options": "ER Patient Intake"
+  },
+  {
+   "fieldname": "bed",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0633\u0631\u064a\u0631",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "recorded_by",
+   "fieldtype": "Link",
+   "label": "\u0633\u062c\u0644 \u0628\u0648\u0627\u0633\u0637\u0629",
+   "options": "User"
+  },
+  {
+   "fieldname": "recorded_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "\u0648\u0642\u062a \u0627\u0644\u0642\u064a\u0627\u0633",
+   "reqd": 1
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u062d\u0631\u0627\u0631\u0629"
+  },
+  {
+   "fieldname": "systolic_bp",
+   "fieldtype": "Int",
+   "label": "\u0636\u063a\u0637 \u0627\u0644\u062f\u0645 \u0627\u0644\u0627\u0646\u0642\u0628\u0627\u0636\u064a"
+  },
+  {
+   "fieldname": "diastolic_bp",
+   "fieldtype": "Int",
+   "label": "\u0636\u063a\u0637 \u0627\u0644\u062f\u0645 \u0627\u0644\u0627\u0646\u0628\u0633\u0627\u0637\u064a"
+  },
+  {
+   "fieldname": "heart_rate",
+   "fieldtype": "Int",
+   "label": "\u0627\u0644\u0646\u0628\u0636"
+  },
+  {
+   "fieldname": "respiratory_rate",
+   "fieldtype": "Int",
+   "label": "\u0645\u0639\u062f\u0644 \u0627\u0644\u062a\u0646\u0641\u0633"
+  },
+  {
+   "fieldname": "spo2",
+   "fieldtype": "Float",
+   "label": "\u0646\u0633\u0628\u0629 \u0627\u0644\u0623\u0643\u0633\u062c\u064a\u0646 SpO2"
+  },
+  {
+   "fieldname": "pain_score",
+   "fieldtype": "Int",
+   "label": "\u0645\u0642\u064a\u0627\u0633 \u0627\u0644\u0623\u0644\u0645"
+  },
+  {
+   "fieldname": "consciousness",
+   "fieldtype": "Select",
+   "label": "\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0648\u0639\u064a",
+   "options": "Alert\nConfused\nDrowsy\nUnresponsive"
+  },
+  {
+   "fieldname": "blood_glucose",
+   "fieldtype": "Float",
+   "label": "\u0633\u0643\u0631 \u0627\u0644\u062f\u0645"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-22 17:46:58.104413",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Vital Signs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,44 @@
+
+/* Blue borders for ALL fields in ER Visit Console */
+.er-visit-console input,
+.er-visit-console textarea,
+.er-visit-console select,
+.er-visit-console .form-control,
+.er-visit-console .control-input,
+.er-visit-console .frappe-control input,
+.er-visit-console .frappe-control textarea,
+.er-visit-console .frappe-control select {
+    border: 1px solid #2196f3 !important;
+}
+
+/* Blue border when field is focused */
+.er-visit-console input:focus,
+.er-visit-console textarea:focus,
+.er-visit-console select:focus,
+.er-visit-console .form-control:focus,
+.er-visit-console .control-input:focus {
+    border-color: #1976d2 !important;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.15) !important;
+}
+
+
+.er-visit-console input,
+.er-visit-console textarea,
+.er-visit-console select,
+.er-visit-console .form-control,
+.er-visit-console .control-input,
+.er-visit-console .frappe-control input,
+.er-visit-console .frappe-control textarea,
+.er-visit-console .frappe-control select {
+    border: 1px solid #2196f3 !important;
+}
+
+.er-visit-console input:focus,
+.er-visit-console textarea:focus,
+.er-visit-console select:focus,
+.er-visit-console .form-control:focus,
+.er-visit-console .control-input:focus {
+    border-color: #1976d2 !important;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.15) !important;
+}
+

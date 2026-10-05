@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "autoname": "format:ER-ENC-{#####}",
+ "creation": "2026-08-05 20:00:00",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+
+ "field_order": [
+  "patient",
+  "er_patient_intake",
+  "patient_encounter",
+  "practitioner",
+  "encounter_date",
+  "encounter_time",
+  "status",
+
+  "er_details_section",
+
+  "visit_type",
+  "chief_complaint",
+  "arrival_mode",
+  "priority",
+  "acuity",
+  "waiting_area",
+  "current_location",
+  "visit_notes",
+
+  "doctor_visit_tab",
+  "clinical_tab",
+  "labs_tab",
+  "medication_tab",
+  "procedures_tab",
+  "services_tab"
+ ],
+
+ "fields": [
+
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "المريض",
+   "options": "Patient"
+  },
+
+  {
+   "fieldname": "er_patient_intake",
+   "fieldtype": "Link",
+   "label": "زيارة الطوارئ",
+   "options": "ER Patient Intake"
+  },
+
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "label": "زيارة الطبيب",
+   "options": "Patient Encounter"
+  },
+
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "الطبيب",
+   "options": "Healthcare Practitioner"
+  },
+
+  {
+   "fieldname": "encounter_date",
+   "fieldtype": "Date",
+   "label": "تاريخ الزيارة"
+  },
+
+  {
+   "fieldname": "encounter_time",
+   "fieldtype": "Time",
+   "label": "وقت الزيارة"
+  },
+
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "الحالة",
+   "options": "Draft\nOpen\nIn Progress\nCompleted\nCancelled"
+  },
+
+
+  {
+   "fieldname": "er_details_section",
+   "fieldtype": "Section Break",
+   "label": "تفاصيل زيارة الطوارئ"
+  },
+
+
+  {
+   "fieldname": "visit_type",
+   "fieldtype": "Link",
+   "label": "نوع الزيارة",
+   "options": "ER Visit Type"
+  },
+
+
+  {
+   "fieldname": "chief_complaint",
+   "fieldtype": "Link",
+   "label": "الشكوى الرئيسية",
+   "options": "ER Chief Complaint"
+  },
+
+
+  {
+   "fieldname": "arrival_mode",
+   "fieldtype": "Link",
+   "label": "طريقة الوصول",
+   "options": "ER Arrival Source"
+  },
+
+
+  {
+   "fieldname": "priority",
+   "fieldtype": "Link",
+   "label": "الأولوية",
+   "options": "ER Priority"
+  },
+
+
+  {
+   "fieldname": "acuity",
+   "fieldtype": "Link",
+   "label": "مستوى الخطورة",
+   "options": "ER Triage Level"
+  },
+
+
+  {
+   "fieldname": "waiting_area",
+   "fieldtype": "Link",
+   "label": "منطقة الانتظار",
+   "options": "ER Waiting Area"
+  },
+
+
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "الموقع الحالي",
+   "options": "ER Current Location"
+  },
+
+
+  {
+   "fieldname": "visit_notes",
+   "fieldtype": "Small Text",
+   "label": "ملاحظات الزيارة"
+  },
+
+
+  {
+   "fieldname": "doctor_visit_tab",
+   "fieldtype": "Tab Break",
+   "label": "تفاصيل زيارة الطبيب"
+  },
+
+
+  {
+   "fieldname": "clinical_tab",
+   "fieldtype": "Tab Break",
+   "label": "الفحص السريري"
+  },
+
+
+  {
+   "fieldname": "labs_tab",
+   "fieldtype": "Tab Break",
+   "label": "الفحوصات والأشعة"
+  },
+
+
+  {
+   "fieldname": "medication_tab",
+   "fieldtype": "Tab Break",
+   "label": "الأدوية"
+  },
+
+
+  {
+   "fieldname": "procedures_tab",
+   "fieldtype": "Tab Break",
+   "label": "الإجراءات الطبية"
+  },
+
+
+  {
+   "fieldname": "services_tab",
+   "fieldtype": "Tab Break",
+   "label": "طلبات الخدمات"
+  }
+
+ ],
+
+ "issingle": 0,
+ "istable": 0,
+ "module": "Emergency Management",
+ "name": "ER Patient Encounter",
+
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

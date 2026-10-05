@@ -1,0 +1,37 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"lPa5oCV8my\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\ud83c\udfe0 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645</span>\",\"col\":12}},{\"id\":\"OANes2i83u\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\ud83c\udfe0 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645\",\"col\":3}}]",
+ "creation": "2026-07-18 18:13:15.625558",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "\ud83c\udfe0",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\ud83c\udfe0 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645",
+ "links": [],
+ "modified": "2026-07-29 18:17:47.490023",
+ "modified_by": "maron@gmail.com",
+ "module": "emergency_management",
+ "name": "\ud83c\udfe0 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0646\u0638\u0627\u0645 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u0639\u0627\u0645\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 25.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\ud83c\udfe0 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645",
+   "link_to": "er-tracking-board",
+   "type": "Page"
+  }
+ ],
+ "title": "\ud83c\udfe0 \u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u062d\u0643\u0645"
+}

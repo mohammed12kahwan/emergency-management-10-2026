@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-09-04 15:44:51.503631",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "encounter",
+  "patient",
+  "transfer_type",
+  "from_department",
+  "to_department",
+  "from_bed",
+  "to_bed",
+  "transfer_time",
+  "transferred_by",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ER-TRN-.YYYY.-"
+  },
+  {
+   "fieldname": "encounter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Encounter",
+   "options": "Patient Encounter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transfer_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transfer Type",
+   "options": "Internal\nExternal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_department",
+   "fieldtype": "Link",
+   "label": "From Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "to_department",
+   "fieldtype": "Link",
+   "label": "To Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "from_bed",
+   "fieldtype": "Link",
+   "label": "From Bed",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "to_bed",
+   "fieldtype": "Link",
+   "label": "To Bed",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "transfer_time",
+   "fieldtype": "Datetime",
+   "label": "Transfer Time"
+  },
+  {
+   "fieldname": "transferred_by",
+   "fieldtype": "Link",
+   "label": "Transferred By",
+   "options": "User"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-04 15:44:51.503631",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Transfer Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient"
+}

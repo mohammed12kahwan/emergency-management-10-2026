@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"n_gsyhvnxi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">\ud83d\udc68\u200d\u2695\ufe0f \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u0627\u0644\u0645\u0646\u0627\u0648\u0628\u0648\u0646</span>\",\"col\":12}},{\"id\":\"C53tlsqGbG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"\ud83d\udc68\u200d\u2695\ufe0f \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \",\"col\":3}}]",
+ "creation": "2026-07-18 18:32:58.678198",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "\ud83d\udc68\u200d\u2695\ufe0f",
+ "idx": 1,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "\ud83d\udc68\u200d\u2695\ufe0f \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u0627\u0644\u0645\u0646\u0627\u0648\u0628\u0648\u0646",
+ "links": [],
+ "modified": "2026-07-29 18:35:42.678150",
+ "modified_by": "maron@gmail.com",
+ "module": "emergency_management",
+ "name": "\ud83d\udc68\u200d\u2695\ufe0f \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u0627\u0644\u0645\u0646\u0627\u0648\u0628\u0648\u0646",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "\u0646\u0638\u0627\u0645 \u0627\u0644\u0637\u0648\u0627\u0631\u0626 \u0627\u0644\u0639\u0627\u0645\u0629",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 26.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "\ud83d\udc68\u200d\u2695\ufe0f \u0627\u0644\u0623\u0637\u0628\u0627\u0621 ",
+   "link_to": "Healthcare Practitioner",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "\ud83d\udc68\u200d\u2695\ufe0f \u0627\u0644\u0623\u0637\u0628\u0627\u0621 \u0627\u0644\u0645\u0646\u0627\u0648\u0628\u0648\u0646"
+}

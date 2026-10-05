@@ -1,0 +1,8 @@
+{
+ "doctype": "Page",
+ "name": "er_bed_patient_view",
+ "page_name": "er_bed_patient_view",
+ "title": "متابعة المريض في السرير",
+ "module": "Emergency Management",
+ "standard": "Yes"
+}

@@ -1,0 +1,182 @@
+.observation-dashboard {
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+    background: #f5f7fa;
+    min-height: 100vh;
+}
+
+
+/* العنوان */
+
+.observation-header {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* البطاقات الإحصائية */
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.stat-card {
+
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    font-size: 16px;
+}
+
+
+.stat-card strong {
+
+    display: block;
+
+    font-size: 32px;
+
+    margin-top: 10px;
+
+}
+
+
+
+/* الحالات */
+
+.stat-card.critical {
+
+    border-right: 6px solid #dc3545;
+
+}
+
+
+.stat-card.warning {
+
+    border-right: 6px solid #ffc107;
+
+}
+
+
+
+/* منطقة المرضى */
+
+#patients-area {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+
+/* بطاقة المريض */
+
+.patient-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    border-right: 6px solid #28a745;
+
+}
+
+
+
+.patient-card.critical {
+
+    border-right-color: #dc3545;
+
+    background: #fff5f5;
+
+}
+
+
+
+.patient-card.warning {
+
+    border-right-color: #ffc107;
+
+    background: #fffbea;
+
+}
+
+
+
+.patient-title {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+/* العلامات الحيوية */
+
+.vitals {
+
+    line-height: 2;
+
+    font-size: 15px;
+
+}
+
+
+
+.empty {
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+}
+
+
+
+/* شاشات صغيرة */
+
+@media(max-width:900px){
+
+    .statistics {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+    #patients-area {
+
+        grid-template-columns:1fr;
+
+    }
+
+}

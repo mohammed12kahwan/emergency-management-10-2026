@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ERA-{YYYY}-{#####}",
+ "creation": "2026-07-23 18:05:58.318385",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "amended_from",
+  "patient",
+  "er_patient_intake",
+  "er_bed",
+  "requested_department",
+  "requesting_doctor",
+  "requested_by",
+  "priority",
+  "status",
+  "admission_reason",
+  "approved_by",
+  "approval_datetime",
+  "admission_reference",
+  "notes",
+  "requested_service_unit_type",
+  "expected_length_of_stay",
+  "admission_status",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ER Admission Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0631\u064a\u0636",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "er_patient_intake",
+   "fieldtype": "Link",
+   "label": "\u0632\u064a\u0627\u0631\u0629 \u0627\u0644\u0637\u0648\u0627\u0631\u0626",
+   "options": "ER Patient Intake"
+  },
+  {
+   "fieldname": "er_bed",
+   "fieldtype": "Link",
+   "label": "\u0633\u0631\u064a\u0631 \u0627\u0644\u0637\u0648\u0627\u0631\u0626",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "requested_department",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0642\u0633\u0645 \u0627\u0644\u0645\u0637\u0644\u0648\u0628",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "requesting_doctor",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0637\u0628\u064a\u0628 \u0627\u0644\u0645\u0639\u0627\u0644\u062c",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "\u0623\u0646\u0634\u0626 \u0628\u0648\u0627\u0633\u0637\u0629",
+   "options": "User"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0623\u0648\u0644\u0648\u064a\u0629",
+   "options": "Normal\nUrgent\nSTAT"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u062d\u0627\u0644\u0629",
+   "options": "Draft\nPending Approval\nApproved\nRejected\nAdmitted\nCancelled"
+  },
+  {
+   "fieldname": "admission_reason",
+   "fieldtype": "Small Text",
+   "label": "\u0633\u0628\u0628 \u0627\u0644\u0631\u0642\u0648\u062f"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "\u0627\u0639\u062a\u0645\u062f \u0628\u0648\u0627\u0633\u0637\u0629",
+   "options": "User"
+  },
+  {
+   "fieldname": "approval_datetime",
+   "fieldtype": "Datetime",
+   "label": "\u0648\u0642\u062a \u0627\u0644\u0627\u0639\u062a\u0645\u0627\u062f"
+  },
+  {
+   "fieldname": "admission_reference",
+   "fieldtype": "Link",
+   "label": "Inpatient Record",
+   "options": "Inpatient Record"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+  },
+  {
+   "fieldname": "requested_service_unit_type",
+   "fieldtype": "Link",
+   "label": "\u0646\u0648\u0639 \u0648\u062d\u062f\u0629 \u0627\u0644\u0631\u0642\u0648\u062f \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629",
+   "options": "Healthcare Service Unit Type"
+  },
+  {
+   "fieldname": "expected_length_of_stay",
+   "fieldtype": "Int",
+   "label": "\u0645\u062f\u0629 \u0627\u0644\u0631\u0642\u0648\u062f \u0627\u0644\u0645\u062a\u0648\u0642\u0639\u0629 (\u0623\u064a\u0627\u0645)"
+  },
+  {
+   "default": "Not Created",
+   "fieldname": "admission_status",
+   "fieldtype": "Select",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0631\u0642\u0648\u062f",
+   "options": "Not Created\nCreated\nAdmitted\nDischarged\nCancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow State",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-23 18:49:49.409322",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Admission Request",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ER Doctor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admission Officer",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

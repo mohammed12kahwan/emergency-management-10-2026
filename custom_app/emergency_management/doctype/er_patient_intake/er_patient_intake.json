@@ -1,0 +1,420 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-26 20:22:31.389627",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "visit_information",
+  "patient",
+  "اسم_المريض",
+  "visit_type",
+  "visit_date_time",
+  "column_break_ndzm",
+  "status",
+  "healthcare_practitioner",
+  "department",
+  "patient_encounter",
+  "section_break_ggza",
+  "arrival_mode",
+  "arrival_time",
+  "column_break_arrival",
+  "referred_from",
+  "accompanied_by",
+  "section_break_vitals",
+  "triage_record",
+  "chief_complaint",
+  "acuity",
+  "column_break_triage",
+  "notes",
+  "last_status_update",
+  "doctor_notes",
+  "priority",
+  "naming_series",
+  "section_break_case_info",
+  "case_category",
+  "case_type",
+  "column_break_case1",
+  "accident_location",
+  "accident_date",
+  "accident_details",
+  "column_break_case2",
+  "injury_type",
+  "other_injury",
+  "section_break_njnf",
+  "assigned_bed",
+  "disposition",
+  "section_break_final_result",
+  "outcome",
+  "death_type",
+  "transfer_to",
+  "transfer_reason",
+  "patient_status_transfer",
+  "patient_needs_transfer",
+  "column_break_final1",
+  "driver_name",
+  "driver_phone",
+  "nurse_name",
+  "nurse_phone",
+  "column_break_qnbw",
+  "admission_time",
+  "discharge_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "visit_information",
+   "fieldtype": "Section Break",
+   "label": "بيانات الزيارة",
+   "columns": 2
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "المريض",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "patient.patient_name",
+   "fieldname": "اسم_المريض",
+   "fieldtype": "Data",
+   "label": "اسم المريض",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visit_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "نوع الزيارة",
+   "options": "ER Visit Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visit_date_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "تاريخ ووقت الزيارة",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ndzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "وصل للطوارئ",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "حالة الزيارة",
+   "options": "وصل للطوارئ\nتحت الفرز\nبانتظار الطبيب\nقيد الفحص\nطلب فحوصات\nبانتظار النتائج\nقرار الطبيب\nفي سرير الطوارئ\nتنويم\nخروج\nتحويل\nملغي"
+  },
+  {
+   "fieldname": "healthcare_practitioner",
+   "fieldtype": "Link",
+   "label": "الطبيب المعالج",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "التخصص",
+   "options": "Department"
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "label": "زيارة الطبيب",
+   "options": "Patient Encounter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ggza",
+   "fieldtype": "Section Break",
+   "label": "بيانات الوصول",
+   "columns": 2
+  },
+  {
+   "fieldname": "arrival_mode",
+   "fieldtype": "Link",
+   "label": "طريقة الوصول",
+   "options": "ER Arrival Source"
+  },
+  {
+   "fieldname": "arrival_time",
+   "fieldtype": "Datetime",
+   "label": "وقت الوصول"
+  },
+  {
+   "fieldname": "column_break_arrival",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "referred_from",
+   "fieldtype": "Data",
+   "label": "محول من"
+  },
+  {
+   "fieldname": "accompanied_by",
+   "fieldtype": "Data",
+   "label": "مرافق"
+  },
+  {
+   "fieldname": "section_break_vitals",
+   "fieldtype": "Section Break",
+   "label": "التقييم السريري",
+   "columns": 2
+  },
+  {
+   "fieldname": "triage_record",
+   "fieldtype": "Link",
+   "label": "سجل الفرز",
+   "options": "Vital Signs"
+  },
+  {
+   "fieldname": "chief_complaint",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "الشكوى الرئيسية",
+   "options": "ER Chief Complaint",
+   "reqd": 1
+  },
+  {
+   "fieldname": "acuity",
+   "fieldtype": "Link",
+   "label": "مستوى الخطورة",
+   "options": "ER Triage Level"
+  },
+  {
+   "fieldname": "column_break_triage",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "ملاحظة"
+  },
+  {
+   "fieldname": "last_status_update",
+   "fieldtype": "Datetime",
+   "label": "آخر تحديث للحالة"
+  },
+  {
+   "fieldname": "doctor_notes",
+   "fieldtype": "Small Text",
+   "label": "ملاحظات الطبيب"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Link",
+   "label": "الأولوية",
+   "options": "ER Priority"
+  },
+  {
+   "default": "ERI-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "سلسلة الترقيم",
+   "options": "ERI-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_njnf",
+   "fieldtype": "Section Break",
+   "label": "التصرف النهائي",
+   "columns": 2
+  },
+  {
+   "fieldname": "assigned_bed",
+   "fieldtype": "Link",
+   "label": "السرير المخصص",
+   "options": "ER Bed"
+  },
+  {
+   "fieldname": "disposition",
+   "fieldtype": "Link",
+   "label": "التصرف النهائي",
+   "options": "ER Disposition"
+  },
+  {
+   "fieldname": "column_break_qnbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "admission_time",
+   "fieldtype": "Datetime",
+   "label": "وقت التنويم"
+  },
+  {
+   "fieldname": "discharge_time",
+   "fieldtype": "Datetime",
+   "label": "وقت الخروج"
+  },
+  {
+   "fieldname": "section_break_case_info",
+   "fieldtype": "Section Break",
+   "label": "بيانات الحالة",
+   "columns": 2,
+   "hidden": 1
+  },
+  {
+   "fieldname": "case_category",
+   "fieldtype": "Select",
+   "label": "لون الحالة",
+   "options": "\nخضراء\nصفراء\nحمراء\nسوداء",
+   "mandatory_depends_on": "eval:![\"وصل للطوارئ\",\"مفتوحة\",\"بانتظار الفرز\",\"تحت الفرز\",\"بانتظار الطبيب\"].includes(doc.status)"
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Select",
+   "label": "نوع الحالة",
+   "options": "\nحادث\nمرضية",
+   "mandatory_depends_on": "eval:![\"وصل للطوارئ\",\"مفتوحة\",\"بانتظار الفرز\",\"تحت الفرز\",\"بانتظار الطبيب\"].includes(doc.status)"
+  },
+  {
+   "fieldname": "column_break_case1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accident_location",
+   "fieldtype": "Data",
+   "label": "مكان وقوع الحادث",
+   "depends_on": "eval:doc.case_type==\"حادث\"",
+   "mandatory_depends_on": "eval:doc.case_type==\"حادث\""
+  },
+  {
+   "fieldname": "accident_date",
+   "fieldtype": "Data",
+   "label": "تاريخ وقوع الحادث",
+   "depends_on": "eval:doc.case_type==\"حادث\"",
+   "mandatory_depends_on": "eval:doc.case_type==\"حادث\""
+  },
+  {
+   "fieldname": "accident_details",
+   "fieldtype": "Small Text",
+   "label": "تفاصيل الحادث",
+   "depends_on": "eval:doc.case_type==\"حادث\""
+  },
+  {
+   "fieldname": "column_break_case2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "injury_type",
+   "fieldtype": "Link",
+   "label": "نوع الإصابة",
+   "options": "injury type",
+   "mandatory_depends_on": "eval:![\"وصل للطوارئ\",\"مفتوحة\",\"بانتظار الفرز\",\"تحت الفرز\",\"بانتظار الطبيب\"].includes(doc.status)"
+  },
+  {
+   "fieldname": "other_injury",
+   "fieldtype": "Data",
+   "label": "وصف الإصابة الأخرى",
+   "depends_on": "eval:doc.injury_type==\"أخرى\"",
+   "mandatory_depends_on": "eval:doc.injury_type==\"أخرى\""
+  },
+  {
+   "fieldname": "section_break_final_result",
+   "fieldtype": "Section Break",
+   "label": "التصرف والنتيجة النهائية",
+   "columns": 2,
+   "hidden": 1
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Select",
+   "label": "مصير الحالة",
+   "options": "\nشفاء\nوفاة\nتحويل داخلي\nتحويل خارجي\nلا يزال داخل الطوارئ\nأخرى"
+  },
+  {
+   "fieldname": "death_type",
+   "fieldtype": "Select",
+   "label": "نوع الوفاة",
+   "options": "\nوصول متوفي\nتوفي خلال 48 ساعة\nتوفي بعد 48 ساعة",
+   "depends_on": "eval:doc.outcome==\"وفاة\""
+  },
+  {
+   "fieldname": "transfer_to",
+   "fieldtype": "Link",
+   "label": "الجهة المحول إليها",
+   "options": "Transfer Destination",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\" || doc.outcome==\"تحويل داخلي\"",
+   "mandatory_depends_on": "eval:doc.outcome==\"تحويل خارجي\" || doc.outcome==\"تحويل داخلي\""
+  },
+  {
+   "fieldname": "transfer_reason",
+   "fieldtype": "Link",
+   "label": "سبب التحويل",
+   "options": "Transfer Reason",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\" || doc.outcome==\"تحويل داخلي\"",
+   "mandatory_depends_on": "eval:doc.outcome==\"تحويل خارجي\" || doc.outcome==\"تحويل داخلي\""
+  },
+  {
+   "fieldname": "patient_status_transfer",
+   "fieldtype": "Select",
+   "label": "حالة المريض عند التحويل",
+   "options": "\nمستقرة\nمتوسطة\nحرجة",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\" || doc.outcome==\"تحويل داخلي\""
+  },
+  {
+   "fieldname": "patient_needs_transfer",
+   "fieldtype": "Small Text",
+   "label": "احتياج الحالة عند التحويل",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\" || doc.outcome==\"تحويل داخلي\""
+  },
+  {
+   "fieldname": "column_break_final1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "اسم السائق / المسعف",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\""
+  },
+  {
+   "fieldname": "driver_phone",
+   "fieldtype": "Data",
+   "label": "رقم هاتف السائق / المسعف",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\""
+  },
+  {
+   "fieldname": "nurse_name",
+   "fieldtype": "Data",
+   "label": "اسم الممرض المرافق",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\""
+  },
+  {
+   "fieldname": "nurse_phone",
+   "fieldtype": "Data",
+   "label": "رقم هاتف الممرض",
+   "depends_on": "eval:doc.outcome==\"تحويل خارجي\""
+  }
+ ],
+ "links": [],
+ "modified": "2026-07-28 16:35:47.151782",
+ "modified_by": "maron@gmail.com",
+ "module": "Emergency Management",
+ "name": "ER Patient Intake",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

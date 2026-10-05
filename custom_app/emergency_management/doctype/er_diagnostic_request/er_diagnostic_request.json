@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ER-DIAG-{####}",
+ "creation": "2026-08-17 22:33:33.423477",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_date",
+  "patient_section",
+  "patient",
+  "patient_name",
+  "patient_encounter",
+  "priority",
+  "medical_department",
+  "request_section",
+  "request_type",
+  "test_name",
+  "item_code",
+  "quantity",
+  "rate",
+  "amount",
+  "laboratory_section",
+  "lab_test",
+  "lab_status",
+  "radiology_section",
+  "radiology_examination",
+  "radiology_status",
+  "result_section",
+  "result",
+  "notes",
+  "billing_section",
+  "billing_status",
+  "qty_invoiced",
+  "sales_invoice"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "تاريخ الطلب"
+  },
+  {
+   "fieldname": "patient_section",
+   "fieldtype": "Section Break",
+   "label": "بيانات المريض"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "المريض",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "patient.patient_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "اسم المريض",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "زيارة الطبيب",
+   "options": "Patient Encounter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Link",
+   "label": "الأولوية",
+   "options": "ER Priority",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "القسم الطبي",
+   "options": "Medical Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_section",
+   "fieldtype": "Section Break",
+   "label": "تفاصيل الطلب"
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "نوع الطلب",
+   "options": "Laboratory\nRadiology",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "الفحص",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "الخدمة",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "الكمية",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "الوحدة",
+   "options": "UOM",
+   "default": "Nos",
+   "insert_after": "quantity"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "السعر"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "الإجمالي",
+   "read_only": 1
+  },
+  {
+   "fieldname": "laboratory_section",
+   "fieldtype": "Section Break",
+   "label": "المختبر"
+  },
+  {
+   "fieldname": "lab_test",
+   "fieldtype": "Link",
+   "label": "Lab Test",
+   "options": "Lab Test"
+  },
+  {
+   "fieldname": "lab_status",
+   "fieldtype": "Select",
+   "label": "حالة المختبر",
+   "options": "Pending\nSample Collected\nIn Progress\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "radiology_section",
+   "fieldtype": "Section Break",
+   "label": "الأشعة"
+  },
+  {
+   "fieldname": "radiology_examination",
+   "fieldtype": "Link",
+   "label": "Radiology Examination",
+   "options": "Radiology Examination"
+  },
+  {
+   "fieldname": "radiology_status",
+   "fieldtype": "Select",
+   "label": "حالة الأشعة",
+   "options": "Requested\nScheduled\nIn Progress\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "result_section",
+   "fieldtype": "Section Break",
+   "label": "النتيجة"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Small Text",
+   "label": "النتيجة"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "ملاحظات"
+  },
+  {
+   "fieldname": "billing_section",
+   "fieldtype": "Section Break",
+   "label": "الفوترة"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "billing_status",
+   "fieldtype": "Select",
+   "label": "حالة الفوترة",
+   "options": "Pending\nPartly Invoiced\nInvoiced"
+  },
+  {
+   "default": "0",
+   "fieldname": "qty_invoiced",
+   "fieldtype": "Float",
+   "label": "الكمية المفوترة"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "فاتورة المبيعات",
+   "options": "Sales Invoice"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-17 22:33:33.423477",
+ "modified_by": "Administrator",
+ "module": "Emergency Management",
+ "name": "ER Diagnostic Request",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "test_name"
+}

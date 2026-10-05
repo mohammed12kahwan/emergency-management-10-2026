@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-18 19:25:03.826071",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5fu9",
+  "amended_from",
+  "examination_no",
+  "patient",
+  "emergency_visit",
+  "column_break_axjh",
+  "examination_type",
+  "section_break_ujau",
+  "body_part",
+  "requested_by",
+  "technician",
+  "column_break_qtvq",
+  "status",
+  "result",
+  "section_break_gwut",
+  "image_attachment",
+  "section_break_zike",
+  "report_pdf"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5fu9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Radiology Examination",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "examination_no",
+   "fieldtype": "Data",
+   "label": "Examination No"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u0631\u064a\u0636",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "emergency_visit",
+   "fieldtype": "Link",
+   "label": "Emergency Visit",
+   "options": "Emergency Visit"
+  },
+  {
+   "fieldname": "column_break_axjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "examination_type",
+   "fieldtype": "Select",
+   "label": "Examination Type",
+   "options": "X-Ray\nCT Scan\nMRI\nUltrasound\nECG\nEcho\nOther"
+  },
+  {
+   "fieldname": "section_break_ujau",
+   "fieldtype": "Section Break"
+  },
+   {
+    "fieldname": "body_part",
+    "fieldtype": "Data",
+    "label": "Body Part"
+   },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Link",
+   "label": "Technician",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "column_break_qtvq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Requested\nScheduled\nIn Progress\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Small Text",
+   "label": "Result"
+  },
+  {
+   "fieldname": "section_break_gwut",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "image_attachment",
+   "fieldtype": "Attach",
+   "label": "Image Attachment"
+  },
+  {
+   "fieldname": "section_break_zike",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_pdf",
+   "fieldtype": "Attach",
+   "label": "Report PDF"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-18 19:37:41.984239",
+ "modified_by": "Administrator",
+ "module": "emergency_management",
+ "name": "Radiology Examination",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "show_title_field_in_link": 1,
+ "title_field": "examination_type",
+ "states": []
+}

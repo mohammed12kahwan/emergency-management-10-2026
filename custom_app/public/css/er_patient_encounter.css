@@ -1,0 +1,435 @@
+/* =====================================
+   ER Patient Encounter 3D Layout
+   ===================================== */
+
+
+/* ===============================
+   Main Sections
+   =============================== */
+
+.section-card {
+
+    border: 1px solid #2b7de9;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,.18),
+        inset 0 1px 0 rgba(255,255,255,.8);
+
+    transition: .3s ease;
+}
+
+
+
+.section-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.25);
+
+}
+
+
+
+/* ===============================
+   Window Titles 3D
+   يعمل مع h3 الموجود في JS
+   =============================== */
+
+
+.section-card h3 {
+
+    display:block !important;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #2196f3,
+            #0d47a1
+        ) !important;
+
+
+    color:white !important;
+
+
+    padding:15px !important;
+
+
+    margin:-15px -15px 20px -15px !important;
+
+
+    border-radius:
+
+        12px 12px 0 0 !important;
+
+
+    font-size:20px !important;
+
+
+    font-weight:bold !important;
+
+
+    text-align:right;
+
+
+    box-shadow:
+
+        0 7px 15px rgba(0,0,0,.35),
+
+        inset 0 3px 5px rgba(255,255,255,.45)
+
+        !important;
+
+
+    text-shadow:
+
+        1px 2px 3px #000
+
+        !important;
+
+}
+
+
+
+
+/* ===============================
+   Different Section Colors
+   =============================== */
+
+
+.er-section-details h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #1565c0,
+        #0d47a1
+    ) !important;
+
+}
+
+
+
+.er-section-doctor h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #6a1b9a,
+        #311b92
+    ) !important;
+
+}
+
+
+
+.er-section-clinical h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #43a047,
+        #1b5e20
+    ) !important;
+
+}
+
+
+
+.er-section-labs h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #fb8c00,
+        #e65100
+    ) !important;
+
+}
+
+
+
+.er-section-medications h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #e53935,
+        #b71c1c
+    ) !important;
+
+}
+
+
+
+.er-section-procedures h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #00838f,
+        #004d40
+    ) !important;
+
+}
+
+
+
+.er-section-services h3 {
+
+    background:
+    linear-gradient(
+        145deg,
+        #546e7a,
+        #263238
+    ) !important;
+
+}
+
+
+
+/* ===============================
+   Fields Grid
+   =============================== */
+
+
+.form-grid {
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+
+
+.form-grid > div {
+
+    border-right:
+
+        2px solid #90caf9;
+
+
+    padding-right:
+
+        15px;
+
+}
+
+
+
+/* ===============================
+   Clinical Cards
+   =============================== */
+
+
+.clinical-card {
+
+    border:
+
+        1px solid #1976d2;
+
+
+    border-radius:
+
+        10px;
+
+
+    padding:
+
+        15px;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e3f2fd
+        );
+
+
+    box-shadow:
+
+        0 4px 10px rgba(0,0,0,.18);
+
+}
+
+
+
+/* ===============================
+   Vitals
+   =============================== */
+
+
+.vitals-box {
+
+    border:
+
+        2px solid #28a745;
+
+
+    border-radius:
+
+        12px;
+
+
+    padding:
+
+        15px;
+
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e8f5e9
+        );
+
+
+    box-shadow:
+
+        0 5px 12px rgba(0,120,0,.25);
+
+}
+
+
+
+
+/* ===============================
+   Inputs
+   =============================== */
+
+
+.form-control {
+
+    border:
+
+        1px solid #64b5f6 !important;
+
+
+    border-radius:
+
+        6px !important;
+
+
+    box-shadow:
+
+        inset 0 2px 4px rgba(0,0,0,.1);
+
+}
+
+
+
+/* ===============================
+   Tables
+   =============================== */
+
+
+.table-bordered {
+
+    border:
+
+        1px solid #1565c0;
+
+}
+
+
+
+.table-bordered th {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #1565c0,
+        #64b5f6
+    );
+
+
+    color:white;
+
+    text-shadow:
+
+        0 1px 2px #003366;
+
+}
+
+
+
+/* Buttons */
+
+.btn-primary,
+.btn-success {
+
+    border-radius:8px !important;
+
+}
+/* =====================================================
+   ER MEDICATION AUTOCOMPLETE
+===================================================== */
+
+.er-medication-field {
+    position: relative;
+}
+
+
+#drug-suggestions {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+
+    max-height: 240px;
+
+    overflow-y: auto;
+
+    z-index: 9999;
+
+    display: none;
+}
+
+
+.drug-suggestion-item {
+    padding: 10px 12px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #eeeeee;
+
+    background: #ffffff;
+
+    direction: rtl;
+
+    text-align: right;
+
+    font-size: 14px;
+}
+
+
+.drug-suggestion-item:last-child {
+    border-bottom: none;
+}
+
+
+.drug-suggestion-item:hover {
+    background: #f3f4f6;
+}

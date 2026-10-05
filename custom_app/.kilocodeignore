@@ -1,0 +1,10 @@
+**/*.before_*
+**/*_backup*
+**/*backup*
+**/*.bak
+**/node_modules/**
+**/__pycache__/**
+**/.cache/**
+**/dist/**
+**/build/**
+**/.git/**

@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "note_time",
+  "user",
+  "practitioner",
+  "department",
+  "note_type",
+  "nursing_airway_status",
+  "nursing_airway_notes",
+  "nursing_breathing_status",
+  "nursing_breathing_notes",
+  "nursing_circulation_status",
+  "nursing_circulation_notes",
+  "nursing_disability_status",
+  "nursing_disability_notes",
+  "nursing_exposure_status",
+  "nursing_exposure_notes",
+  "nursing_sample_symptoms",
+  "nursing_sample_allergies",
+  "nursing_sample_medications",
+  "nursing_sample_history",
+  "nursing_sample_last_intake",
+  "nursing_sample_events",
+  "nursing_general_risk",
+  "nursing_doctor_notified",
+  "nursing_escalation_reason",
+  "note",
+  "reference_type",
+  "reference_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "note_time",
+   "fieldtype": "Datetime",
+   "label": "تاريخ ووقت التدوين"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "المستخدم",
+   "options": "User"
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "الطبيب",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "قسم المستشفى",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "note_type",
+   "fieldtype": "Select",
+   "label": "نوع التدوين",
+   "options": "Clinical Note\nNursing Note\nProgress Note\nProcedure Note\nConsultation Note\nOther"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Text Editor",
+   "label": "التدوين السريري"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Link",
+   "label": "نوع المرجع",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "المرجع",
+   "options": "reference_type"
+  },
+  {
+   "fieldname": "nursing_airway_status",
+   "fieldtype": "Select",
+   "label": "Airway Status — حالة مجرى الهواء",
+   "options": "Normal - طبيعي\nAbnormal - غير طبيعي\nUnable to Assess - غير قابل للتقييم"
+  },
+  {
+   "fieldname": "nursing_airway_notes",
+   "fieldtype": "Small Text",
+   "label": "Airway Notes — ملاحظات مجرى الهواء"
+  },
+  {
+   "fieldname": "nursing_breathing_status",
+   "fieldtype": "Select",
+   "label": "Breathing Status — حالة التنفس",
+   "options": "Normal - طبيعي\nAbnormal - غير طبيعي\nUnable to Assess - غير قابل للتقييم"
+  },
+  {
+   "fieldname": "nursing_breathing_notes",
+   "fieldtype": "Small Text",
+   "label": "Breathing Notes — ملاحظات التنفس"
+  },
+  {
+   "fieldname": "nursing_circulation_status",
+   "fieldtype": "Select",
+   "label": "Circulation Status — حالة الدورة الدموية",
+   "options": "Stable - مستقر\nAbnormal - غير طبيعي\nUnable to Assess - غير قابل للتقييم"
+  },
+  {
+   "fieldname": "nursing_circulation_notes",
+   "fieldtype": "Small Text",
+   "label": "Circulation Notes — ملاحظات الدورة الدموية"
+  },
+  {
+   "fieldname": "nursing_disability_status",
+   "fieldtype": "Select",
+   "label": "Disability / Neurological Status — الحالة العصبية",
+   "options": "Alert - واعٍ\nAltered - متغير الوعي\nUnable to Assess - غير قابل للتقييم"
+  },
+  {
+   "fieldname": "nursing_disability_notes",
+   "fieldtype": "Small Text",
+   "label": "Neurological Notes — الملاحظات العصبية"
+  },
+  {
+   "fieldname": "nursing_exposure_status",
+   "fieldtype": "Select",
+   "label": "Exposure / General Examination — الفحص العام والتعرض",
+   "options": "Stable - مستقر\nAbnormal - غير طبيعي\nUnable to Assess - غير قابل للتقييم"
+  },
+  {
+   "fieldname": "nursing_exposure_notes",
+   "fieldtype": "Small Text",
+   "label": "Exposure Notes — ملاحظات الفحص العام"
+  },
+  {
+   "fieldname": "nursing_sample_symptoms",
+   "fieldtype": "Small Text",
+   "label": "Symptoms — الأعراض"
+  },
+  {
+   "fieldname": "nursing_sample_allergies",
+   "fieldtype": "Small Text",
+   "label": "Allergies — الحساسية"
+  },
+  {
+   "fieldname": "nursing_sample_medications",
+   "fieldtype": "Small Text",
+   "label": "Medications — الأدوية الحالية"
+  },
+  {
+   "fieldname": "nursing_sample_history",
+   "fieldtype": "Small Text",
+   "label": "Past Medical History — التاريخ المرضي"
+  },
+  {
+   "fieldname": "nursing_sample_last_intake",
+   "fieldtype": "Small Text",
+   "label": "Last Oral Intake — آخر تناول للطعام أو الشراب"
+  },
+  {
+   "fieldname": "nursing_sample_events",
+   "fieldtype": "Small Text",
+   "label": "Events Leading to Visit — الأحداث السابقة للوصول"
+  },
+  {
+   "fieldname": "nursing_general_risk",
+   "fieldtype": "Small Text",
+   "label": "General Risk — عوامل الخطورة العامة"
+  },
+  {
+   "fieldname": "nursing_doctor_notified",
+   "fieldtype": "Select",
+   "label": "Doctor Notified — تم إبلاغ الطبيب",
+   "options": "Yes - نعم\nNo - لا"
+  },
+  {
+   "fieldname": "nursing_escalation_reason",
+   "fieldtype": "Small Text",
+   "label": "Escalation Reason — سبب التصعيد للطبيب"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "module": "Emergency Management",
+ "name": "ER Clinical Note",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

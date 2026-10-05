@@ -1,0 +1,2875 @@
+/* =========================================================
+   ER VISIT CONSOLE
+   Professional Emergency Department UI
+   RTL - Arabic
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.er-visit-console,
+.er-list-page {
+
+    direction: rtl;
+
+    width: 100%;
+
+    padding: 80px 12px 8px 12px;
+
+    box-sizing: border-box;
+
+    font-family:
+        "Tajawal",
+        "Cairo",
+        "Arial",
+        sans-serif;
+
+    color: #1e293b;
+}
+
+
+/* =========================================================
+   ESI PRIORITY — Header accent
+======================================================== */
+
+.er-visit-console.er-esi-1 .er-compact-header {
+    border-left: 4px solid #ef4444;
+}
+
+.er-visit-console.er-esi-2 .er-compact-header {
+    border-left: 4px solid #fb923c;
+}
+
+.er-visit-console.er-esi-3 .er-compact-header {
+    border-left: 4px solid #fde047;
+}
+
+.er-visit-console.er-esi-4 .er-compact-header {
+    border-left: 4px solid #4ade80;
+}
+
+.er-visit-console.er-esi-5 .er-compact-header {
+    border-left: 4px solid #60a5fa;
+}
+
+
+/* =========================================================
+   PAGE TITLE BANNER (list view header)
+   ========================================================= */
+
+.er-page-title-banner {
+
+    width: 100%;
+
+    min-height: 60px;
+
+    padding: 8px 12px;
+
+    margin-bottom: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid
+        rgba(255,255,255,.20);
+
+    background:
+        linear-gradient(
+            135deg,
+            #475569 0%,
+            #334159 100%
+        );
+
+}
+
+.er-page-title-banner .patient-icon {
+
+    font-size: 18px;
+
+    width: 36px;
+
+    height: 36px;
+
+    min-width: 36px;
+
+}
+
+.er-page-title-banner .patient-header-info h2 {
+
+    color: #f1f5f9;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin: 0;
+
+}
+
+.er-page-title-banner .patient-header-info .patient-age {
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100
+   ========================================================= */
+
+.er-compact-header {
+
+    width: 100%;
+
+    min-height: 56px;
+
+    padding: 6px 12px;
+
+    margin-bottom: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    position: sticky;
+
+    top: 8px;
+
+    z-index: 1020;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0284c7 0%,
+            #0369a1 100%
+        );
+
+    border: 1px solid
+        rgba(255,255,255,.20);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 5px
+        rgba(15,23,42,.10);
+
+}
+
+
+/* =========================================================
+   PATIENT HEADER ROW
+======================================================== */
+
+.er-patient-header-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    min-width: 0;
+
+}
+
+
+.er-patient-name {
+
+    color: #b8e7f4;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    min-width: 0;
+
+}
+
+
+.er-patient-age {
+
+    color: rgba(255,255,255,.76);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+
+.er-patient-id {
+
+    color: rgba(255,255,255,.80);
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================================================
+   VISIT INFO ROW
+======================================================== */
+
+.er-visit-info-row {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 6px 10px;
+
+    font-size: 12px;
+
+}
+
+
+.er-info-label {
+
+    color: rgba(255,255,255,.68);
+
+    font-weight: 600;
+
+}
+
+
+.er-info-value {
+
+    color: rgba(255,255,255,.92);
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    max-width: 140px;
+
+}
+
+
+/* =========================================================
+   CHIEF COMPLAINT
+======================================================== */
+
+.er-chief-complaint-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: rgba(255,255,255,.95);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    max-width: calc(100% - 16px);
+
+}
+
+
+.er-complaint-icon {
+
+    font-size: 14px;
+
+}
+
+
+.er-complaint-text {
+
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================================================
+   DOCTOR CARD
+======================================================== */
+
+.er-info-value#doctor {
+
+    color: #b8e7f4;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================================
+   ACTION BAR — Shared buttons below header
+======================================================== */
+
+.er-action-bar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1020;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    padding: 8px 4px;
+
+    direction: rtl;
+
+    background: inherit;
+
+}
+
+
+.er-action-bar-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    direction: rtl;
+
+    flex-wrap: wrap;
+
+}
+
+
+.er-action-bar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    direction: rtl;
+
+    flex-wrap: wrap;
+
+}
+
+
+.er-action-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    min-width: 44px;
+
+    height: 36px;
+
+    padding: 4px 12px;
+
+    border: 1px solid
+        rgba(255,255,255,.35);
+
+    border-radius: 8px;
+
+    background:
+        rgba(255,255,255,.28);
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 1px 3px
+        rgba(0,0,0,.18);
+
+    transition:
+        background .14s ease,
+        transform .14s ease,
+        box-shadow .14s ease,
+        border-color .14s ease;
+
+    direction: rtl;
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,.25);
+
+    white-space: nowrap;
+
+}
+
+
+.er-action-btn:hover {
+
+    background:
+        rgba(255,255,255,.38);
+
+    border-color:
+        rgba(255,255,255,.55);
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 3px 8px
+        rgba(0,0,0,.22);
+
+    color: #ffffff;
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,.3);
+
+}
+
+.er-action-btn:focus-visible,
+.er-link-special-action:focus-visible {
+
+    outline:
+        3px solid
+        rgba(255,255,255,.92);
+
+    outline-offset:
+        2px;
+
+}
+
+.er-action-btn:disabled {
+
+    opacity:
+        .55;
+
+    cursor:
+        not-allowed;
+
+    transform:
+        none;
+
+    box-shadow:
+        none;
+
+}
+
+
+.er-action-btn:active {
+
+    transform:
+        translateY(1px);
+
+}
+
+
+.er-notif-btn {
+
+    position: relative;
+
+}
+
+
+.er-notification-badge {
+
+    position: absolute;
+
+    top: -4px;
+
+    right: -6px;
+
+    min-width: 18px;
+
+    height: 18px;
+
+    padding: 0 4px;
+
+    border-radius: 9px;
+
+    background: #ef4444;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================================
+   FIXED BOTTOM ACTION BAR
+======================================================= */
+
+.er-action-bar-fixed {
+
+    position: fixed;
+
+    left: 12px;
+
+    top: 120px;
+
+    right: auto;
+
+    z-index: 1030;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 6px;
+
+    direction: rtl;
+
+    height: auto;
+
+    min-height: 0;
+
+    max-height: none;
+
+    width: max-content;
+
+    box-sizing: border-box;
+
+    overflow: visible;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0284c7 0%,
+            #0369a1 100%
+        );
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0,0,0,.18);
+
+}
+
+
+.er-action-bar-fixed .er-action-bar-left,
+.er-action-bar-fixed .er-action-bar-right {
+
+    display: contents;
+
+}
+
+
+.er-action-bar-fixed .er-notification-panel {
+
+    top: 0;
+
+    left: calc(100% + 8px);
+
+    right: auto;
+
+    bottom: auto;
+
+    transform: translateY(0);
+
+}
+
+
+.er-action-bar-fixed .er-notification-panel[style*="block"] {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+.er-visit-console .layout-main-section {
+
+    padding-bottom:
+        0 !important;
+
+    padding-left:
+        170px !important;
+
+}
+
+
+.er-refresh-btn {
+
+    color: #ffffff;
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,.25);
+
+}
+
+
+.er-save-btn {
+
+    background:
+        linear-gradient(
+            145deg,
+            #49c878,
+            #239b54
+        );
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    border-color: #126e35;
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,.25);
+
+    min-width:
+        150px;
+
+    min-height:
+        40px;
+
+    font-size:
+        14px;
+
+}
+
+
+.er-bed-info-row {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 4px;
+
+    padding: 3px 8px;
+
+    border-radius: 6px;
+
+    background:
+        rgba(255,255,255,.12);
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.er-bed-icon {
+
+    font-size: 14px;
+
+}
+
+
+.er-medical-history-btn {
+
+    background: rgba(255,255,255,.12);
+
+}
+
+
+.er-lab-entry-controls {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 8px;
+
+}
+
+
+.er-save-btn:hover {
+
+    filter: brightness(1.05);
+
+}
+
+
+.er-save-btn:disabled {
+
+    opacity: .55;
+
+    cursor: wait;
+
+    transform: none;
+
+}
+
+.er-action-bar .er-save-btn:hover {
+
+    transform:
+        translateY(-1px);
+
+    filter:
+        brightness(1.05);
+
+}
+
+@media (max-width: 700px) {
+
+    .er-action-bar {
+
+        align-items:
+            stretch;
+
+        flex-direction:
+            column;
+
+    }
+
+    .er-action-bar-left,
+    .er-action-bar-right {
+
+        width:
+            100%;
+
+        justify-content:
+            stretch;
+
+    }
+
+    .er-action-bar .er-action-btn {
+
+        flex:
+            1 1 auto;
+
+        min-width:
+            0;
+
+    }
+
+
+    .er-action-bar-fixed {
+
+        flex-direction:
+            column;
+
+        align-items:
+            center;
+
+        left:
+            8px;
+
+        right:
+            auto;
+
+        top:
+            100px;
+
+        gap:
+            3px;
+
+        padding:
+            5px 4px;
+
+    }
+
+
+    .er-action-bar-fixed .er-action-bar-left,
+    .er-action-bar-fixed .er-action-bar-right {
+
+        display:
+            contents;
+
+    }
+
+
+    .er-action-bar-fixed .er-action-btn {
+
+        flex:
+            0 0 auto;
+
+        min-width:
+            38px;
+
+        min-height:
+            32px;
+
+        font-size:
+            12px;
+
+        padding:
+            3px 6px;
+
+    }
+
+}
+
+
+/* =========================================================
+   NOTIFICATION PANEL
+======================================================== */
+
+.er-notification-panel {
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    right: 0;
+
+    z-index: 9999;
+
+    min-width: 280px;
+
+    max-width: 320px;
+
+    max-height: 400px;
+
+    display: none;
+
+    flex-direction: column;
+
+    border: 1px solid
+        rgba(0,0,0,.12);
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 32px
+        rgba(0,0,0,.22);
+
+    color: #243447;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transform: translateY(-8px);
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+}
+
+
+.er-notification-panel-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 8px 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0284c7,
+            #0369a1
+        );
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.er-notification-close {
+
+    background: none;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    padding: 0 4px;
+
+    opacity: 0.8;
+
+    transition: opacity 0.15s ease;
+
+}
+
+
+.er-notification-close:hover {
+
+    opacity: 1;
+
+}
+
+
+.er-notification-list {
+
+    overflow-y: auto;
+
+}
+
+
+/* =========================================================
+   PATIENT MAIN
+========================================================= */
+
+.patient-main {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   PATIENT 3D ICON
+========================================================= */
+
+.patient-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    min-width: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #60a5fa,
+            #2563eb
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.45);
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    box-shadow:
+
+        inset 0 2px 2px
+        rgba(255,255,255,.45),
+
+        inset 0 -3px 4px
+        rgba(0,0,0,.14),
+
+        0 3px 6px
+        rgba(0,0,0,.22);
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,.25);
+
+}
+
+
+/* =========================================================
+   PATIENT HEADER INFORMATION
+========================================================= */
+
+.patient-header-info {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   PATIENT NAME
+========================================================= */
+
+.patient-main h2 {
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #b8e7f4;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================================================
+   PATIENT AGE
+========================================================= */
+
+.patient-age {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    margin-top: 2px;
+
+    padding: 2px 6px;
+
+    border-radius: 5px;
+
+    background:
+        rgba(255,255,255,.15);
+
+    color:
+        rgba(255,255,255,.92);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+}
+
+
+/* =========================================================
+   HEADER INFORMATION CARDS
+========================================================= */
+
+.doctor-card,
+.visit-card {
+
+    width: max-content;
+
+    min-width: 105px;
+
+    max-width: 180px;
+
+    padding: 5px 8px;
+
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    background:
+        rgba(255,255,255,.13);
+
+    border:
+        1px solid
+        rgba(255,255,255,.22);
+
+    color: #ffffff;
+
+    box-shadow:
+
+        inset 0 1px 2px
+        rgba(255,255,255,.25),
+
+        inset 0 -2px 3px
+        rgba(0,0,0,.08),
+
+        0 2px 5px
+        rgba(0,0,0,.12);
+
+}
+
+
+/* =========================================================
+   HEADER LABEL
+========================================================= */
+
+.doctor-card .header-label,
+.visit-card .header-label {
+
+    display: block;
+
+    margin: 0;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+}
+
+
+/* =========================================================
+   HEADER VALUE
+========================================================= */
+
+.doctor-card strong,
+.visit-card strong {
+
+    display: block;
+
+    margin: 2px 0 0;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    line-height: 1.25;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================================================
+   HEADER DATE
+========================================================= */
+
+.visit-card .header-date {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 8px;
+
+    line-height: 1.2;
+
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+========================================================= */
+
+.er-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================================
+   3D CARD
+========================================================= */
+
+.er-card {
+
+    position: relative;
+
+    background: #ffffff;
+
+    border:
+        1px solid #dbeafe;
+
+    border-radius: 11px;
+
+    padding: 11px;
+
+    min-height: 120px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+
+        0 5px 12px
+        rgba(15,23,42,.08),
+
+        0 2px 3px
+        rgba(15,23,42,.04),
+
+        inset 0 1px 0
+        rgba(255,255,255,.95);
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease;
+
+}
+
+
+/* =========================================================
+   3D HOVER
+========================================================= */
+
+.er-card:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+
+        0 9px 18px
+        rgba(15,23,42,.12),
+
+        0 3px 5px
+        rgba(15,23,42,.06),
+
+        inset 0 1px 0
+        rgba(255,255,255,.95);
+
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.er-card-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 0 0 8px;
+
+    padding:
+        0 0 6px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    color: #1e293b;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+}
+
+
+/* =========================================================
+   CARD ICON - BASE
+========================================================= */
+
+.er-icon {
+
+    width: 29px;
+
+    height: 29px;
+
+    min-width: 29px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.50);
+
+    box-shadow:
+
+        inset 0 2px 2px
+        rgba(255,255,255,.45),
+
+        inset 0 -3px 4px
+        rgba(0,0,0,.13),
+
+        0 3px 5px
+        rgba(0,0,0,.15);
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,.20);
+
+}
+
+
+/* =========================================================
+   PATIENT CARD ICON
+========================================================= */
+
+.er-info-grid
+.er-card:nth-child(1)
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #60a5fa,
+            #2563eb
+        );
+
+}
+
+
+/* =========================================================
+   EMERGENCY CARD ICON
+========================================================= */
+
+.er-info-grid
+.er-card:nth-child(2)
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #fb7185,
+            #dc2626
+        );
+
+}
+
+
+/* =========================================================
+   LOCATION CARD ICON
+========================================================= */
+
+.er-info-grid
+.er-card:nth-child(3)
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #34d399,
+            #059669
+        );
+
+}
+
+
+/* =========================================================
+   COMPLAINT ICON
+========================================================= */
+
+.complaint-card
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #fbbf24,
+            #d97706
+        );
+
+}
+
+
+/* =========================================================
+   CARD DATA ROW
+========================================================= */
+
+.er-card p {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin: 5px 0;
+
+    padding:
+        4px 7px;
+
+    min-height: 26px;
+
+    box-sizing: border-box;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid #edf2f7;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+
+    color: #475569;
+
+}
+
+
+/* =========================================================
+   DATA LABEL
+========================================================= */
+
+.er-card p span {
+
+    font-weight: 700;
+
+    color: #64748b;
+
+}
+
+
+/* =========================================================
+   DATA VALUE
+========================================================= */
+
+.er-card p strong {
+
+    color: #1e293b;
+
+    font-weight: 800;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================================================
+   COMPLAINT CARD
+========================================================= */
+
+.complaint-card {
+
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    min-height: 85px;
+
+}
+
+
+/* =========================================================
+   COMPLAINT VALUE
+========================================================= */
+
+.er-complaint-value {
+
+    min-height: 38px;
+
+    padding: 8px 10px;
+
+    box-sizing: border-box;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid #edf2f7;
+
+    border-radius: 7px;
+
+    color: #334155;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================================
+   TABS CONTAINER
+========================================================= */
+
+.er-tabs {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 9px;
+
+    padding: 4px;
+
+    background:
+        #f8fafc;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 9px;
+
+}
+
+
+/* =========================================================
+   TAB
+========================================================= */
+
+.er-tab {
+
+    border:
+        1px solid #e2e8f0;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    padding:
+        6px 11px;
+
+    min-height: 31px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-family:
+        inherit;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    transition:
+
+        background .15s ease,
+
+        color .15s ease,
+
+        transform .15s ease,
+
+        box-shadow .15s ease;
+
+}
+
+
+/* =========================================================
+   TAB HOVER
+========================================================= */
+
+.er-tab:hover {
+
+    background:
+        #eff6ff;
+
+    color:
+        #1d4ed8;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+/* =========================================================
+   ACTIVE TAB
+========================================================= */
+
+.er-tab.active {
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    border-color:
+        #1d4ed8;
+
+    color:
+        #ffffff;
+
+    box-shadow:
+
+        0 3px 7px
+        rgba(37,99,235,.25),
+
+        inset 0 1px 0
+        rgba(255,255,255,.25);
+
+}
+
+
+/* =========================================================
+   CONTENT AREA
+========================================================= */
+
+#er-content {
+
+    width: 100%;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 11px;
+
+    padding: 11px;
+
+    min-height: 260px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+
+        0 5px 14px
+        rgba(15,23,42,.07);
+
+}
+
+
+/* =========================================================
+   DETAILS CONTAINER
+========================================================= */
+
+.er-details-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 14px;
+
+    padding: 0;
+
+    direction: rtl;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+   DETAILS CARD
+========================================================= */
+
+.er-details-container
+.er-card {
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid #dbe3ee;
+
+    border-radius:
+        12px;
+
+    overflow:
+        hidden;
+
+    min-height:
+        auto;
+
+    padding:
+        0;
+
+    box-shadow:
+
+        0 4px 12px
+        rgba(15,23,42,.08),
+
+        inset 0 1px 0
+        rgba(255,255,255,.95);
+
+}
+
+
+/* =========================================================
+   DETAILS CARD TITLE
+========================================================= */
+
+.er-details-container
+.er-card-title {
+
+    margin:
+        0;
+
+    padding:
+        10px 14px;
+
+    min-height:
+        42px;
+
+    box-sizing:
+        border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color:
+        #ffffff;
+
+    font-size:
+        14px;
+
+    font-weight:
+        800;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    border:
+        none;
+
+}
+
+
+/* =========================================================
+   DETAILS ICON
+========================================================= */
+
+.er-details-container
+.er-card-title
+.er-icon {
+
+    width:
+        28px;
+
+    height:
+        28px;
+
+    min-width:
+        28px;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        8px;
+
+    background:
+        rgba(255,255,255,.18);
+
+    font-size:
+        17px;
+
+    line-height:
+        1;
+
+}
+
+
+/* =========================================================
+   DETAILS FIELDS GRID
+========================================================= */
+
+.er-details-container
+.er-fields {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:
+        12px;
+
+    padding:
+        14px;
+
+}
+
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.er-details-container
+.er-field {
+
+    min-width:
+        0;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+}
+
+
+/* =========================================================
+   FIELD LABEL
+========================================================= */
+
+.er-details-container
+.er-field label {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        #475569;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    line-height:
+        1.4;
+
+}
+
+
+/* =========================================================
+   EDIT FIELD
+========================================================= */
+
+.er-details-container
+.er-edit-field {
+
+    width:
+        100%;
+
+    height:
+        40px;
+
+    min-height:
+        40px;
+
+    padding:
+        7px 10px;
+
+    border:
+        1px solid #cbd5e1 !important;
+
+    border-radius:
+        8px;
+
+    background:
+        #ffffff;
+
+    color:
+        #1e293b;
+
+    font-family:
+        inherit;
+
+    font-size:
+        13px;
+
+    box-sizing:
+        border-box;
+
+    box-shadow:
+        inset 0 1px 2px
+        rgba(15,23,42,.04);
+
+    transition:
+        border-color .15s ease,
+        box-shadow .15s ease;
+
+}
+
+
+/* =========================================================
+   FIELD FOCUS
+========================================================= */
+
+.er-details-container
+.er-edit-field:focus {
+
+    border-color:
+        #2563eb !important;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37,99,235,.10);
+
+    outline:
+        none;
+
+}
+
+
+/* =========================================================
+   READONLY
+========================================================= */
+
+.er-details-container
+.er-edit-field[readonly] {
+
+    background:
+        #f8fafc;
+
+    border-color:
+        #dbe3ee !important;
+
+    color:
+        #334155;
+
+    cursor:
+        default;
+
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.er-details-container
+select.er-edit-field {
+
+    cursor:
+        pointer;
+
+}
+
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.er-details-container
+textarea.er-edit-field {
+
+    width:
+        100%;
+
+    height:
+        auto;
+
+    min-height:
+        95px;
+
+    padding:
+        9px 10px;
+
+    line-height:
+        1.7;
+
+    resize:
+        vertical;
+
+}
+
+
+/* =========================================================
+   WIDE DETAILS CARD
+========================================================= */
+
+.er-details-container
+.er-wide-card {
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+/* =========================================================
+   COMPLAINT FIELD
+========================================================= */
+
+.er-details-container
+.er-complaint-field {
+
+    padding:
+        14px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE DETAILS
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .er-details-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .er-details-container
+    .er-fields {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .er-details-container
+    .er-wide-card {
+
+        grid-column:
+            auto;
+
+    }
+
+}
+
+/* =========================================================
+   SAVE ACTIONS
+========================================================= */
+
+.er-details-actions {
+
+    grid-column:
+        1 / -1;
+
+    display: flex;
+
+    justify-content:
+        flex-start;
+
+    align-items:
+        center;
+
+    gap: 7px;
+
+    padding:
+        1px 0 5px;
+
+}
+
+
+/* =========================================================
+   SAVE BUTTON
+========================================================= */
+
+#save-er-details {
+
+    min-width: 115px;
+
+    height: 33px;
+
+    padding:
+        0 13px;
+
+    border-radius: 7px;
+
+    font-family:
+        inherit;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.er-details-container table,
+.er-visit-console table {
+
+    width: 100%;
+
+    border-collapse:
+        separate;
+
+    border-spacing:
+        0;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius:
+        9px;
+
+    background:
+        #ffffff;
+
+    font-size:
+        11px;
+
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.er-details-container th,
+.er-visit-console th {
+
+    padding:
+        7px 8px;
+
+    background:
+        #f1f5f9;
+
+    color:
+        #334155;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    text-align:
+        right;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+}
+
+
+/* =========================================================
+   TABLE CELLS
+========================================================= */
+
+.er-details-container td,
+.er-visit-console td {
+
+    padding:
+        7px 8px;
+
+    color:
+        #475569;
+
+    border-bottom:
+        1px solid #f1f5f9;
+
+    vertical-align:
+        middle;
+
+}
+
+
+/* =========================================================
+   TABLE HOVER
+========================================================= */
+
+.er-details-container
+tbody tr:hover,
+
+.er-visit-console
+tbody tr:hover {
+
+    background:
+        #f8fafc;
+
+}
+
+
+/* =========================================================
+   TABLE INPUTS
+========================================================= */
+
+.er-details-container
+table input,
+
+.er-details-container
+table select,
+
+.er-visit-console
+table input,
+
+.er-visit-console
+table select {
+
+    width: 100%;
+
+    height: 30px;
+
+    padding:
+        4px 6px;
+
+    box-sizing:
+        border-box;
+
+    border:
+        1px solid #cbd5e1;
+
+    border-radius:
+        6px;
+
+    font-family:
+        inherit;
+
+    font-size:
+        10px;
+
+}
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+.er-status,
+.er-badge {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        23px;
+
+    padding:
+        2px 7px;
+
+    border-radius:
+        999px;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.er-empty {
+
+    padding:
+        25px 12px;
+
+    text-align:
+        center;
+
+    color:
+        #64748b;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =========================================================
+   ESI COLORS
+========================================================= */
+
+.er-visit-console.er-esi-1
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ef4444,
+            #b91c1c
+        );
+
+}
+
+
+.er-visit-console.er-esi-2
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #fb923c,
+            #ea580c
+        );
+
+}
+
+
+.er-visit-console.er-esi-3
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #fde047,
+            #eab308
+        );
+
+    color:
+        #713f12;
+
+}
+
+
+.er-visit-console.er-esi-4
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #4ade80,
+            #16a34a
+        );
+
+}
+
+
+.er-visit-console.er-esi-5
+.er-icon {
+
+    background:
+        linear-gradient(
+            145deg,
+            #60a5fa,
+            #2563eb
+        );
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .er-info-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 900
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .er-compact-header {
+
+        flex-wrap:
+            wrap;
+
+    }
+
+
+    .patient-main {
+
+        flex:
+            1 1 100%;
+
+    }
+
+
+    .doctor-card,
+    .visit-card {
+
+        flex:
+            1 1 150px;
+
+        width:
+            auto;
+
+        max-width:
+            none;
+
+    }
+
+
+    .er-details-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .er-details-container
+    .er-wide-card {
+
+        grid-column:
+            auto;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 700
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .er-info-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .er-details-container
+    .er-fields {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .patient-main {
+
+        min-width:
+            100%;
+
+    }
+
+
+    .doctor-card,
+    .visit-card {
+
+        width:
+            100%;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 600
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .er-visit-console,
+    .er-list-page {
+
+        padding:
+            6px;
+
+    }
+
+
+    .er-compact-header {
+
+        padding:
+            7px;
+
+        border-radius:
+            9px;
+
+    }
+
+
+    .patient-icon {
+
+        width:
+            31px;
+
+        height:
+            31px;
+
+        min-width:
+            31px;
+
+        font-size:
+            15px;
+
+    }
+
+
+    .patient-main h2 {
+
+        font-size:
+            14px;
+
+    }
+
+
+    .er-tab {
+
+        flex:
+            1 1 auto;
+
+        padding:
+            6px 8px;
+
+        font-size:
+            10px;
+
+    }
+
+
+    #er-content {
+
+        padding:
+            8px;
+
+        border-radius:
+            9px;
+
+    }
+
+}
+
+/* =========================================================
+   ENTRY CONTROLS
+======================================================= */
+
+.er-lab-entry-controls,
+.er-radiology-entry-controls,
+.er-procedure-entry-controls,
+.er-medication-entry-controls,
+.er-service-entry-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 8px 4px 0;
+    border-top: 1px solid var(--border-color);
+    margin-bottom: 8px;
+}
+
+.er-enhanced-collapse-header {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.er-enhanced-collapse-toggle {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--fg-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.er-enhanced-collapse-toggle:hover,
+.er-enhanced-collapse-toggle:focus-visible {
+    background: var(--bg-color);
+}
+
+.er-enhanced-collapsed > :not(.er-enhanced-collapse-header) {
+    display: none !important;
+}
+
+/* Shared entry-window presentation aligned with Radiology. */
+.er-labs-section .er-labs-card,
+.er-procedures-section .er-procedures-card,
+.er-medications-section .er-medication-card {
+    width: 100%;
+    margin: 0 0 14px 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--fg-color);
+    box-shadow: var(--card-shadow);
+    overflow: visible;
+}
+
+.er-labs-section .er-labs-header,
+.er-procedures-section .er-procedures-header,
+.er-medications-section .er-medication-card-header {
+    min-height: 46px;
+    margin: 0;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.er-labs-section .er-labs-header h3,
+.er-procedures-section .er-procedures-header h3,
+.er-medications-section .er-medication-card-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.er-labs-section .er-lab-entry-table thead th,
+.er-procedures-section .er-procedure-entry-table thead th,
+.er-medications-section #medication-entry-table thead th {
+    background: var(--bg-color);
+    font-weight: 700;
+}
+
+.er-labs-section .er-lab-entry-table input,
+.er-labs-section .er-lab-entry-table select,
+.er-procedures-section .er-procedure-entry-table input,
+.er-procedures-section .er-procedure-entry-table select,
+.er-medications-section #medication-entry-table input,
+.er-medications-section #medication-entry-table select {
+    min-height: 36px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--fg-color);
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.er-labs-section .er-labs-header > .btn,
+.er-procedures-section .er-procedures-header > .btn,
+.er-medications-section .er-medication-header-actions .btn {
+    min-height: 34px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#lab-autocomplete-portal,
+#procedure-autocomplete-portal,
+#er-radiology-autocomplete-portal {
+    z-index: 9999;
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--fg-color);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .22);
+    padding: 4px;
+}
+
+#lab-autocomplete-portal [role="option"]:has(.link-option),
+#procedure-autocomplete-portal [role="option"]:has(.link-option),
+#er-radiology-autocomplete-portal [role="option"]:has(.link-option) {
+    display: none !important;
+}
+
+#er-radiology-autocomplete-portal [role="option"] .small {
+    display: none !important;
+}
+
+#lab-autocomplete-portal [role="option"],
+#procedure-autocomplete-portal [role="option"],
+#er-radiology-autocomplete-portal [role="option"],
+.er-link-special-action {
+
+    cursor:
+        pointer;
+
+    user-select:
+        none;
+
+}
+
+#lab-autocomplete-portal [role="option"]:hover,
+#procedure-autocomplete-portal [role="option"]:hover,
+#er-radiology-autocomplete-portal [role="option"]:hover {
+
+    background:
+        var(--bg-color);
+
+}
+
+.er-link-special-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px 4px;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-color);
+}
+
+.er-link-special-action {
+    width: 100%;
+    min-height: 34px;
+    padding: 7px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--fg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+
+.er-link-special-action:hover,
+.er-link-special-action:focus {
+    background: var(--bg-color);
+}
+
+.er-labs-section .er-lab-entry-table td,
+.er-procedures-section .er-procedure-entry-table td,
+.er-medications-section #medication-entry-table td {
+    vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+    .er-labs-section .er-labs-header,
+    .er-procedures-section .er-procedures-header,
+    .er-medications-section .er-medication-card-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}

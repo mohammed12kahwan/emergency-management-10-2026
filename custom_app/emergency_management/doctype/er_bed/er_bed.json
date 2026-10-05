@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:bed_code",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bed_code",
+  "bed_name",
+  "arabic_name",
+  "column_break_zngk",
+  "waiting_area",
+  "current_location",
+  "bed_status",
+  "is_active",
+
+  "section_break_patient",
+  "current_patient",
+  "current_intake",
+  "patient_queue",
+  "current_observation",
+
+  "column_break_patient_1",
+  "assigned_doctor",
+  "assigned_nurse",
+  "patient_status",
+  "current_triage_level",
+  "last_vital_sign",
+  "last_patient_update",
+  "current_service",
+
+  "section_break_zamn",
+  "bed_number",
+  "room_number",
+  "is_isolation_bed",
+  "supports_ventilator",
+  "occupied_time",
+  "released_time",
+  "occupied_minutes",
+  "bed_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "bed_code",
+   "fieldtype": "Data",
+   "label": "كود السرير",
+   "unique": 1
+  },
+  {
+   "fieldname": "bed_name",
+   "fieldtype": "Data",
+   "label": "اسم السرير"
+  },
+  {
+   "fieldname": "arabic_name",
+   "fieldtype": "Data",
+   "label": "الاسم بالعربية"
+  },
+  {
+   "fieldname": "column_break_zngk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "waiting_area",
+   "fieldtype": "Link",
+   "label": "منطقة الانتظار",
+   "options": "ER Waiting Area"
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "الموقع الحالي",
+   "options": "ER Current Location"
+  },
+  {
+   "fieldname": "bed_status",
+   "fieldtype": "Link",
+   "label": "حالة السرير",
+   "options": "ER Bed Status",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+
+  {
+   "fieldname": "section_break_patient",
+   "fieldtype": "Section Break",
+   "label": "بيانات المريض الحالية"
+  },
+  {
+   "fieldname": "current_patient",
+   "fieldtype": "Link",
+   "label": "المريض الحالي",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "current_intake",
+   "fieldtype": "Link",
+   "label": "زيارة الطوارئ",
+   "options": "ER Patient Intake"
+  },
+  {
+   "fieldname": "patient_queue",
+   "fieldtype": "Link",
+   "label": "قائمة الانتظار",
+   "options": "ER Patient Queue"
+  },
+  {
+   "fieldname": "current_observation",
+   "fieldtype": "Link",
+   "label": "الملاحظة الحالية",
+   "options": "ER Observation Stay"
+  },
+
+  {
+   "fieldname": "column_break_patient_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_doctor",
+   "fieldtype": "Link",
+   "label": "الطبيب المسؤول",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "assigned_nurse",
+   "fieldtype": "Link",
+   "label": "الممرض المسؤول",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "patient_status",
+   "fieldtype": "Select",
+   "label": "حالة المريض",
+   "options": "Stable\nCritical\nDeteriorating\nUnder Observation\nReady for Transfer\nDischarged"
+  },
+  {
+   "fieldname": "current_triage_level",
+   "fieldtype": "Link",
+   "label": "مستوى الخطورة الحالي",
+   "options": "ER Triage Level"
+  },
+  {
+   "fieldname": "last_vital_sign",
+   "fieldtype": "Link",
+   "label": "آخر علامة حيوية",
+   "options": "ER Vital Signs"
+  },
+  {
+   "fieldname": "last_patient_update",
+   "fieldtype": "Datetime",
+   "label": "آخر تحديث للمريض"
+  },
+  {
+   "fieldname": "current_service",
+   "fieldtype": "Select",
+   "label": "الخدمة الحالية",
+   "options": "None\nLaboratory\nRadiology\nMedication\nConsultation\nTransfer\nDischarge"
+  },
+
+  {
+   "fieldname": "section_break_zamn",
+   "fieldtype": "Section Break",
+   "label": "بيانات السرير"
+  },
+  {
+   "fieldname": "bed_number",
+   "fieldtype": "Int",
+   "label": "رقم السرير"
+  },
+  {
+   "fieldname": "room_number",
+   "fieldtype": "Data",
+   "label": "رقم الغرفة"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_isolation_bed",
+   "fieldtype": "Check",
+   "label": "سرير عزل"
+  },
+  {
+   "default": "1",
+   "fieldname": "supports_ventilator",
+   "fieldtype": "Check",
+   "label": "يدعم جهاز تنفس"
+  },
+  {
+   "fieldname": "occupied_time",
+   "fieldtype": "Datetime",
+   "label": "وقت إشغال السرير"
+  },
+  {
+   "fieldname": "released_time",
+   "fieldtype": "Datetime",
+   "label": "وقت إخلاء السرير"
+  },
+  {
+   "fieldname": "occupied_minutes",
+   "fieldtype": "Int",
+   "label": "مدة إشغال السرير"
+  },
+  {
+   "fieldname": "bed_notes",
+   "fieldtype": "Small Text",
+   "label": "ملاحظات"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Emergency Management",
+ "name": "ER Bed",
+ "naming_rule": "By fieldname",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

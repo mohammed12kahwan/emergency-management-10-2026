@@ -1,0 +1,144 @@
+<div class="er-dashboard">
+
+    <!-- Header -->
+
+    <div class="er-header">
+
+        <div>
+
+            <h1>🚑 لوحة متابعة مرضى الطوارئ</h1>
+
+            <p>Emergency Department Tracking Board</p>
+
+        </div>
+
+        <div class="header-right">
+
+            <span id="current-time"></span>
+
+            <button class="btn-refresh">
+                🔄 تحديث
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- KPI Cards -->
+
+    <div class="er-cards">
+
+        <div class="er-card">
+            <h4>👥 المرضى</h4>
+            <span id="patients-count">0</span>
+        </div>
+
+        <div class="er-card waiting">
+            <h4>🚑 انتظار</h4>
+            <span id="waiting-count">0</span>
+        </div>
+
+        <div class="er-card triage">
+            <h4>📝 الفرز</h4>
+            <span id="triage-count">0</span>
+        </div>
+
+        <div class="er-card doctor">
+            <h4>👨‍⚕️ عند الطبيب</h4>
+            <span id="doctor-count">0</span>
+        </div>
+
+        <div class="er-card beds">
+            <h4>🛏 الأسرة</h4>
+            <span id="beds-count">0</span>
+        </div>
+
+        <div class="er-card critical">
+            <h4>🔴 حالات حرجة</h4>
+            <span id="critical-count">0</span>
+        </div>
+
+    </div>
+
+    <!-- Toolbar -->
+
+    <div class="er-toolbar">
+
+        <input
+            id="patient-search"
+            type="text"
+            placeholder="🔍 البحث عن مريض">
+
+        <select id="filter-triage">
+
+            <option value="">
+                جميع مستويات الفرز
+            </option>
+
+        </select>
+
+        <select id="filter-doctor">
+
+            <option value="">
+                جميع الأطباء
+            </option>
+
+        </select>
+
+        <select id="filter-status">
+
+            <option value="">
+                جميع الحالات
+            </option>
+
+        </select>
+
+    </div>
+
+    <!-- Main Table -->
+
+    <div class="er-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>المريض</th>
+
+                    <th>رقم الزيارة</th>
+
+                    <th>الفرز</th>
+
+                    <th>الطبيب</th>
+
+                    <th>السرير</th>
+
+                    <th>وقت الانتظار</th>
+
+                    <th>الحالة</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="patient-list">
+
+                <tr>
+
+                    <td colspan="7">
+
+                        لا توجد بيانات
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

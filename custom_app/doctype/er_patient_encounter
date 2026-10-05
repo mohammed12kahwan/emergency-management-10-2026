@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ER-ENC-{#####}",
+ "creation": "2026-08-05 00:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "er_patient_intake",
+  "patient_encounter",
+  "practitioner",
+  "encounter_date",
+  "encounter_time",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "er_patient_intake",
+   "fieldtype": "Link",
+   "label": "ER Patient Intake",
+   "options": "ER Patient Intake"
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "label": "Healthcare Patient Encounter",
+   "options": "Patient Encounter"
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "encounter_date",
+   "fieldtype": "Date",
+   "label": "Encounter Date"
+  },
+  {
+   "fieldname": "encounter_time",
+   "fieldtype": "Time",
+   "label": "Encounter Time"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOpen\nIn Progress\nCompleted\nCancelled"
+  }
+ ],
+ "module": "Emergency Management",
+ "name": "ER Patient Encounter",
+ "naming_rule": "Expression",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

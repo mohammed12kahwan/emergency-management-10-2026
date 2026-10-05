@@ -1,0 +1,1013 @@
+/* ==========================================================
+   EMERGENCY TRACKING BOARD
+   Professional Dashboard UI
+   ========================================================== */
+
+.er-dashboard {
+
+    direction: rtl;
+    text-align: right;
+
+    background: #f4f7fb;
+
+    min-height: 100vh;
+
+    padding: 20px 24px 30px;
+
+    font-family:
+        "Noto Kufi Arabic",
+        "Cairo",
+        sans-serif;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.er-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 18px;
+
+    padding: 4px 0;
+
+}
+
+
+.er-title {
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    color: #172033;
+
+    line-height: 1.4;
+
+}
+
+
+.er-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.er-btn {
+
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 9px 16px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    transition:
+        background .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.er-btn:hover {
+
+    transform: translateY(-1px);
+
+}
+
+
+.er-btn-primary {
+
+    background: #2563eb;
+
+    color: #fff;
+
+    box-shadow: 0 3px 8px rgba(37, 99, 235, .18);
+
+}
+
+
+.er-btn-primary:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+.er-btn-success {
+
+    background: #16a34a;
+
+    color: #fff;
+
+}
+
+
+.er-btn-success:hover {
+
+    background: #15803d;
+
+}
+
+
+.er-btn-danger {
+
+    background: #dc2626;
+
+    color: #fff;
+
+}
+
+
+.er-btn-danger:hover {
+
+    background: #b91c1c;
+
+}
+
+
+/* ==========================================================
+   STATISTICS CARDS
+   ========================================================== */
+
+.er-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    gap: 12px;
+
+    width: 100%;
+
+    margin-bottom: 16px;
+
+}
+
+
+.er-card {
+
+    position: relative;
+
+    min-width: 0;
+
+    background: #fff;
+
+    border-radius: 12px;
+
+    padding: 15px 16px;
+
+    min-height: 88px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e7edf5;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, .05);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+    overflow: hidden;
+
+}
+
+
+.er-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(15, 23, 42, .08);
+
+}
+
+
+.er-card-title {
+
+    color: #687386;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+.er-card-number {
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #172033;
+
+    line-height: 1.2;
+
+}
+
+
+/* ==========================================================
+   CARD ACCENTS
+   ========================================================== */
+
+.er-card.total {
+
+    border-right: 4px solid #2563eb;
+
+}
+
+
+.er-card.critical {
+
+    border-right: 4px solid #dc2626;
+
+}
+
+
+.er-card.waiting {
+
+    border-right: 4px solid #f59e0b;
+
+}
+
+
+.er-card.doctor {
+
+    border-right: 4px solid #8b5cf6;
+
+}
+
+
+.er-card.treatment {
+
+    border-right: 4px solid #16a34a;
+
+}
+
+
+.er-card.beds {
+
+    border-right: 4px solid #0ea5e9;
+
+}
+
+
+.er-card.wait-average {
+
+    border-right: 4px solid #64748b;
+
+}
+
+
+/* ==========================================================
+   ESI DISTRIBUTION SECTION
+   ========================================================== */
+
+.er-esi-distribution {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin: 0 0 16px;
+
+}
+
+
+/*
+   بعض النسخ من الـ JS قد تضع العنوان قبل
+   .er-esi-distribution مباشرة
+*/
+
+.er-esi-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+
+    background: #fff;
+
+    border: 1px solid #e7edf5;
+
+    border-radius: 10px;
+
+    padding: 11px 13px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 2px 8px rgba(15, 23, 42, .04);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.er-esi-item:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 14px rgba(15, 23, 42, .07);
+
+}
+
+
+/* ==========================================================
+   ESI COLOR INDICATOR
+   ========================================================== */
+
+.er-esi-color {
+
+    width: 10px;
+
+    height: 38px;
+
+    min-width: 10px;
+
+    border-radius: 6px;
+
+    background: var(--esi-color, #999);
+
+    flex-shrink: 0;
+
+}
+
+
+/* ==========================================================
+   ESI LABEL
+   ========================================================== */
+
+.er-esi-label {
+
+    flex: 1;
+
+    min-width: 0;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* ==========================================================
+   ESI COUNT
+   ========================================================== */
+
+.er-esi-count {
+
+    min-width: 32px;
+
+    height: 32px;
+
+    padding: 0 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #f1f5f9;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ==========================================================
+   SEARCH / TOOLBAR
+   ========================================================== */
+
+.er-toolbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    margin-bottom: 12px;
+
+}
+
+
+.er-search-wrapper {
+
+    position: relative;
+
+    flex: 1;
+
+    max-width: 480px;
+
+}
+
+
+.er-search-icon {
+
+    position: absolute;
+
+    right: 13px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    pointer-events: none;
+
+}
+
+
+.er-search {
+
+    width: 100%;
+
+    height: 42px;
+
+    box-sizing: border-box;
+
+    padding: 9px 40px 9px 14px;
+
+    border: 1px solid #d8e0ea;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.er-search::placeholder {
+
+    color: #9aa5b5;
+
+}
+
+
+.er-search:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, .10);
+
+}
+
+
+/* ==========================================================
+   TABLE WRAPPER
+   ========================================================== */
+
+.er-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: #fff;
+
+    border: 1px solid #e7edf5;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 12px rgba(15, 23, 42, .05);
+
+}
+
+
+/* ==========================================================
+   TABLE
+   ========================================================== */
+
+.er-table {
+
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    background: #fff;
+
+}
+
+
+.er-table thead {
+
+    background: #1e40af;
+
+    color: #fff;
+
+}
+
+
+.er-table th {
+
+    padding: 12px 10px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #1e3a8a;
+
+}
+
+
+.er-table td {
+
+    padding: 11px 10px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #edf2f7;
+
+    font-size: 12px;
+
+    color: #334155;
+
+    white-space: nowrap;
+
+}
+
+
+.er-table tbody tr {
+
+    transition:
+        background .15s ease;
+
+}
+
+
+.er-table tbody tr:hover {
+
+    background: #f8fafc;
+
+}
+
+
+.er-table tbody tr:last-child td {
+
+    border-bottom: none;
+
+}
+
+
+/* ==========================================================
+   BADGES
+   ========================================================== */
+
+.badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 25px;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+.badge-open {
+
+    background: #2563eb;
+
+}
+
+
+.badge-waiting {
+
+    background: #f59e0b;
+
+}
+
+
+.badge-doctor {
+
+    background: #8b5cf6;
+
+}
+
+
+.badge-treatment {
+
+    background: #16a34a;
+
+}
+
+
+.badge-closed {
+
+    background: #64748b;
+
+}
+
+
+/* ==========================================================
+   ESI BADGE
+   ========================================================== */
+
+.esi-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 34px;
+
+    height: 28px;
+
+    padding: 0 8px;
+
+    border-radius: 7px;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    box-sizing: border-box;
+
+}
+
+
+.esi-empty {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+}
+
+
+/* ==========================================================
+   OLD ESI CIRCLE SUPPORT
+   ========================================================== */
+
+.esi {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    font-weight: 800;
+
+    font-size: 12px;
+
+}
+
+
+.esi1 {
+
+    background: #dc2626;
+
+}
+
+
+.esi2 {
+
+    background: #f97316;
+
+}
+
+
+.esi3 {
+
+    background: #facc15;
+
+    color: #222;
+
+}
+
+
+.esi4 {
+
+    background: #22c55e;
+
+}
+
+
+.esi5 {
+
+    background: #2563eb;
+
+}
+
+
+/* ==========================================================
+   ROW ACTIONS
+   ========================================================== */
+
+.row-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+}
+
+
+.row-btn {
+
+    width: 31px;
+
+    height: 31px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    transition:
+        transform .15s ease,
+        opacity .15s ease;
+
+}
+
+
+.row-btn:hover {
+
+    transform: scale(1.06);
+
+    opacity: .92;
+
+}
+
+
+.btn-triage {
+
+    background: #f59e0b;
+
+}
+
+
+.btn-doctor {
+
+    background: #2563eb;
+
+}
+
+
+.btn-bed {
+
+    background: #16a34a;
+
+}
+
+
+.btn-treatment {
+
+    background: #7c3aed;
+
+}
+
+
+.btn-discharge {
+
+    background: #dc2626;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1300px) {
+
+    .er-cards {
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
+    }
+
+    .er-esi-distribution {
+
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .er-dashboard {
+
+        padding: 15px;
+
+    }
+
+    .er-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+    .er-actions {
+
+        width: 100%;
+
+    }
+
+    .er-cards {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+    .er-esi-distribution {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+    .er-toolbar {
+
+        align-items: stretch;
+
+        flex-direction: column;
+
+    }
+
+    .er-search-wrapper {
+
+        max-width: none;
+
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .er-dashboard {
+
+        padding: 10px;
+
+    }
+
+    .er-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .er-esi-distribution {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .er-title {
+
+        font-size: 22px;
+
+    }
+
+}

@@ -1,0 +1,349 @@
+/* ============================================================
+   ER Diagnostic Report - Reference UI
+   ============================================================ */
+
+.er-diagnostic-report {
+    width: 100%;
+    direction: rtl;
+    font-size: 12px;
+}
+
+.er-diagnostic-observations-header {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0 8px;
+}
+
+.er-diagnostic-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.er-diagnostic-heading-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.er-diagnostic-stats {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 11px;
+}
+
+.er-diagnostic-stats span {
+    white-space: nowrap;
+}
+
+.er-stat-total {
+    color: var(--text-muted);
+}
+
+.er-stat-approved {
+    color: #159447;
+}
+
+.er-stat-rejected {
+    color: #d72626;
+}
+
+.er-stat-pending {
+    color: #9a7a00;
+}
+
+.er-diagnostic-actions {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.er-diagnostic-actions .btn {
+    min-height: 28px;
+    border-radius: 7px;
+    font-size: 11px;
+}
+
+.er-action-icon {
+    width: 30px;
+    padding: 0;
+}
+
+.er-action-purple {
+    border: 1px solid #8d5cf6;
+    color: #7040cf;
+    background: white;
+}
+
+.er-action-secondary {
+    border: 1px solid var(--border-color);
+    background: var(--fg-color);
+}
+
+.er-action-blue {
+    border: 1px solid #2878d7;
+    color: #1b63bc;
+    background: white;
+}
+
+.er-action-green {
+    border: 1px solid #2e9b59;
+    color: #16833e;
+    background: white;
+}
+
+.er-action-save {
+    border: 1px solid #3f3f3f;
+    color: #222;
+    background: white;
+}
+
+.er-diagnostic-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    border-bottom: 1px solid #2878d7;
+    margin-top: 2px;
+    overflow-x: auto;
+    direction: rtl;
+}
+
+.er-diagnostic-tab {
+    border: 1px solid transparent;
+    border-bottom: 0;
+    background: transparent;
+    padding: 9px 15px 8px;
+    margin-bottom: -1px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: var(--text-color);
+    border-radius: 7px 7px 0 0;
+}
+
+.er-diagnostic-tab.active {
+    border-color: #2878d7;
+    background: white;
+    color: #155fb8;
+    font-weight: 600;
+}
+
+.er-diagnostic-tab span {
+    margin-inline-start: 4px;
+}
+
+.er-diagnostic-table {
+    width: 100%;
+}
+
+.er-diagnostic-table-header,
+.er-diagnostic-result-row {
+    display: grid;
+    grid-template-columns:
+        minmax(190px, 1.7fr)
+        minmax(100px, 0.8fr)
+        minmax(115px, 1fr)
+        minmax(75px, 0.55fr)
+        minmax(115px, 0.9fr)
+        minmax(120px, 1fr)
+        minmax(100px, 0.75fr)
+        minmax(80px, 0.65fr);
+    align-items: center;
+}
+
+.er-diagnostic-table-header {
+    min-height: 36px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
+    background: white;
+}
+
+.er-diagnostic-result-row {
+    min-height: 42px;
+    border-bottom: 1px solid #e6e6e6;
+    background: white;
+}
+
+.er-diagnostic-result-row > div {
+    min-width: 0;
+    padding: 6px 8px;
+    text-align: center;
+}
+
+.er-diagnostic-result-row .col-test {
+    text-align: right;
+    padding-right: 15px;
+}
+
+.er-diagnostic-result-row .col-test a {
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.er-diagnostic-result-row .col-test a:hover {
+    text-decoration: underline;
+}
+
+.er-diagnostic-result-row.is-child .col-test {
+    padding-right: 34px;
+}
+
+.er-diagnostic-parent-row {
+    display: grid;
+    grid-template-columns: minmax(220px, 2fr) minmax(100px, 1fr) minmax(110px, 0.8fr) minmax(80px, 0.6fr);
+    align-items: center;
+    min-height: 46px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.er-parent-test {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    text-align: right;
+}
+
+.er-expand-parent {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #bfc7d1;
+    border-radius: 6px;
+    background: #fafafa;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.er-parent-spacer {
+    min-height: 1px;
+}
+
+.er-parent-status {
+    text-align: center;
+}
+
+.er-parent-actions {
+    text-align: center;
+}
+
+.er-status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 58px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.er-status-badge.approved {
+    background: #1db954;
+    color: white;
+}
+
+.er-status-badge.rejected {
+    background: #fff;
+    color: #e42323;
+    border: 1px solid #e42323;
+}
+
+.er-status-badge.pending {
+    background: #f3f3f3;
+    color: #8c6c00;
+}
+
+.er-status-badge.received {
+    background: #e9f2ff;
+    color: #1f67bf;
+}
+
+.er-result-value,
+.er-result-input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(120px, 100%);
+    min-height: 30px;
+    border: 0;
+    border-radius: 8px;
+    background: #ececec;
+    color: #4b5563;
+    text-align: center;
+    padding: 4px 8px;
+}
+
+.er-result-input {
+    outline: none;
+}
+
+.er-result-input:focus {
+    box-shadow: 0 0 0 2px rgba(40, 120, 215, 0.16);
+}
+
+.er-result-value.readonly {
+    cursor: default;
+}
+
+.er-reject-btn {
+    border: 1px solid #e12b2b;
+    color: #d62020;
+    background: white;
+    border-radius: 7px;
+    padding: 3px 9px;
+}
+
+.er-reject-btn:hover {
+    background: #fff3f3;
+}
+
+.er-diagnostic-empty,
+.er-diagnostic-error {
+    padding: 45px 20px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.er-diagnostic-error {
+    color: #c52323;
+}
+
+.er-diagnostic-report.screen-view {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    background: white;
+    overflow: auto;
+    padding: 18px;
+}
+
+@media (max-width: 1100px) {
+
+    .er-diagnostic-table {
+        overflow-x: auto;
+    }
+
+    .er-diagnostic-table-header,
+    .er-diagnostic-result-row {
+        min-width: 1000px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .er-diagnostic-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .er-diagnostic-actions {
+        width: 100%;
+    }
+}
